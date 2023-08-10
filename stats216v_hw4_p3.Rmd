@@ -6,13 +6,229 @@ output: html_notebook
 
 
 This problem involves the OJ data set which is part of the ISLR package.
+
+```{r}
+library(e1071)
+library(ISLR)
+attach(OJ)
+OJ
+```
+
+
 (a) Create a training set containing a random sample of 535 observations, and a test set containing the remaining observations. Use the commands set.seed(2017); train = sample(1:nrow(OJ), 535); test = setdiff(1:nrow(OJ), train).
+```{r}
+set.seed(2017)
+
+train = sample(1:nrow(OJ), 535)
+test = setdiff(1:nrow(OJ), train)
+```
+
+
 (b) Fit a (linear) support vector classifier to the training data using cost=1, with Purchase as the response and the other variables as predictors. Use the summary() function to produce summary statistics about the SVM, and describe the results obtained.
+```{r}
+
+svm.fit <- svm(Purchase~.,data=OJ[train,],kernel="linear",cost=1)
+summary(svm.fit)
+```
+
 (c) What are the training and test error rates?
+```{r}
+yhat <- predict(svm.fit)
+
+table(predict=yhat, truth=OJ$Purchase[train])
+
+```
+The training error rate is 0.14
+```{r}
+table(predict=yhat, truth=OJ$Purchase[test])
+```
+The test error rate is 0.47
+
+
 (d) Use the tune() function to select an optimal cost. Consider values in the range
 0.01 to 10.
+```{r}
+
+tune.out <- tune(svm,Purchase~.,data=OJ[train,],kernel="linear",ranges=list(cost=c(0.01,0.05,0.1,0.5,1,5,10)))
+summary(tune.out)
+
+
+
+```
+
+
 (e) Compute the training and test error rates using this new value for cost.
+```{r}
+
+bestmod <- tune.out$best.model
+summary(bestmod)
+
+# svm.fit <- svm(Purchase~.,data=OJ[train,],kernel="linear",cost=1)
+
+
+
+
+
+```
+
+
 (f) Repeat parts (b) through (e) using a support vector machine with a radial kernel. Use the default value for gamma.
+```{r}
+
+svmrad.fit <- svm(Purchase~.,data=OJ[train,],kernel="radial")
+summary(svmrad.fit)
+
+
+
+```
+
+```{r}
+yhat <- predict(svmrad.fit)
+
+table(predict=yhat, truth=OJ$Purchase[train])
+```
+The training error rate is 
+
+```{r}
+table(predict=yhat, truth=OJ$Purchase[test])
+```
+The test error rate is 
+
+```{r}
+
+tunerad.out <- tune(svm,Purchase~.,data=OJ[train,],kernel="radial",ranges=list(cost=c(0.01,0.05,0.1,0.5,1,5,10)))
+summary(tunerad.out)
+```
+
+```{r}
+bestmodrad <- tunerad.out$best.model
+summary(bestmodrad)
+```
+
+```{r}
+yhat <- predict(svmrad.fit)
+
+table(predict=yhat, truth=OJ$Purchase[train])
+
+
+```
+The training error rate is 
+
+
+```{r}
+table(predict=yhat, truth=OJ$Purchase[test])
+```
+The test error rate is 
+
+
+
+
+
+
 (g) Repeat parts (b) through (e) using a support vector machine with a polynomial kernel of degree 2.
+```{r}
+
+svmply.fit <- svm(Purchase~.,data=OJ[train,],kernel="polynomial",degree=2)
+summary(svmply.fit)
+
+
+
+```
+
+```{r}
+yhat <- predict(svmply.fit)
+
+table(predict=yhat, truth=OJ$Purchase[train])
+```
+The training error rate is 
+
+```{r}
+table(predict=yhat, truth=OJ$Purchase[test])
+```
+The test error rate is 
+
+```{r}
+
+tuneply.out <- tune(svm,Purchase~.,data=OJ[train,],kernel="radial",ranges=list(cost=c(0.01,0.05,0.1,0.5,1,5,10)))
+summary(tuneply.out)
+```
+
+```{r}
+bestmodrad <- tuneply.out$best.model
+summary(bestmodply)
+```
+
+```{r}
+yhat <- predict(svmply.fit)
+
+table(predict=yhat, truth=OJ$Purchase[train])
+
+
+```
+The training error rate is 
+
+
+```{r}
+table(predict=yhat, truth=OJ$Purchase[test])
+```
+The test error rate is 
+
+
+
+
+
+
+
 (h) Repeat parts (b) through (e) using a linear support vector machine, applied to an expanded feature set consisting of linear and all possible quadratic terms for the predictors. How does this compare to the polynomial kernel both conceptually and in terms of the results for this problem?
+```{r}
+
+svmexp.fit <- svm(Purchase~.,data=OJ[train,],kernel="radial")
+summary(svmexp.fit)
+
+
+
+```
+
+```{r}
+yhat <- predict(svmexp.fit)
+
+table(predict=yhat, truth=OJ$Purchase[train])
+```
+The training error rate is 
+
+```{r}
+table(predict=yhat, truth=OJ$Purchase[test])
+```
+The test error rate is 
+
+```{r}
+
+tuneexp.out <- tune(svm,Purchase~.,data=OJ[train,],kernel="radial",ranges=list(cost=c(0.01,0.05,0.1,0.5,1,5,10)))
+summary(tuneexp.out)
+```
+
+```{r}
+bestmodexp <- tuneexp.out$best.model
+summary(bestmodexp)
+```
+
+```{r}
+yhat <- predict(svmexp.fit)
+
+table(predict=yhat, truth=OJ$Purchase[train])
+
+
+```
+The training error rate is 
+
+
+```{r}
+table(predict=yhat, truth=OJ$Purchase[test])
+```
+The test error rate is 
+
+
+
+
 (i) Overall, which approach seems to give the best results on this data?
+
