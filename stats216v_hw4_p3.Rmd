@@ -1,21 +1,17 @@
 ---
-title: "R Notebook"
 output: html_notebook
 ---
 ## Problem 3
 
 
-This problem involves the OJ data set which is part of the ISLR package.
-
 ```{r}
 library(e1071)
 library(ISLR)
 attach(OJ)
-OJ
 ```
 
 
-(a) Create a training set containing a random sample of 535 observations, and a test set containing the remaining observations. Use the commands set.seed(2017); train = sample(1:nrow(OJ), 535); test = setdiff(1:nrow(OJ), train).
+### a) 
 ```{r}
 set.seed(2017)
 
@@ -24,52 +20,53 @@ test = setdiff(1:nrow(OJ), train)
 ```
 
 
-(b) Fit a (linear) support vector classifier to the training data using cost=1, with Purchase as the response and the other variables as predictors. Use the summary() function to produce summary statistics about the SVM, and describe the results obtained.
+### b)
 ```{r}
-
 svm.fit <- svm(Purchase~.,data=OJ[train,],kernel="linear",cost=1)
 summary(svm.fit)
 ```
+The SVM machine has 202 support vectors with 102 in the CH class and 100 in the MM class.
+
 
 (c) What are the training and test error rates?
 ```{r}
 yhat <- predict(svm.fit)
 
 table(predict=yhat, truth=OJ$Purchase[train])
-
 ```
-The training error rate is 0.14
+The training error rate is the count of errors made over the tootal count or (40+37)/(201+80+132+122) = 0.14
+
 ```{r}
 table(predict=yhat, truth=OJ$Purchase[test])
 ```
-The test error rate is 0.47
+The test error rate is the count of errors made over the count of cases or (132+122)/(201+80+132+122) = 0.47.
 
 
-(d) Use the tune() function to select an optimal cost. Consider values in the range
-0.01 to 10.
+### d)
 ```{r}
-
-tune.out <- tune(svm,Purchase~.,data=OJ[train,],kernel="linear",ranges=list(cost=c(0.01,0.05,0.1,0.5,1,5,10)))
+tune.out <- tune(svm,Purchase~.,data=OJ[train,],kernel="linear",ranges=list(cost=c(0.01,0.05,0.1,0.5,0.7,0.75,0.85,0.95,1,5,7.5,8,10)))
 summary(tune.out)
-
-
-
 ```
+An optimal cost is 10.
 
 
-(e) Compute the training and test error rates using this new value for cost.
+### e)
 ```{r}
-
 bestmod <- tune.out$best.model
 summary(bestmod)
-
-# svm.fit <- svm(Purchase~.,data=OJ[train,],kernel="linear",cost=1)
-
-
-
-
-
 ```
+
+```{r}
+yhat <- predict(bestmod)
+
+table(predict=yhat, truth=OJ$Purchase[train])
+```
+The training error rate is the count of errors made over the tootal count or (44+31)/(201+80+132+122) = 0.14
+
+```{r}
+table(predict=yhat, truth=OJ$Purchase[test])
+```
+The test error rate is the count of errors made over the tootal count or (132+112)/(201+80+132+122) = 0.46
 
 
 (f) Repeat parts (b) through (e) using a support vector machine with a radial kernel. Use the default value for gamma.
@@ -125,15 +122,13 @@ The test error rate is
 
 
 
-(g) Repeat parts (b) through (e) using a support vector machine with a polynomial kernel of degree 2.
+### g)
 ```{r}
-
 svmply.fit <- svm(Purchase~.,data=OJ[train,],kernel="polynomial",degree=2)
 summary(svmply.fit)
-
-
-
 ```
+Now 315 support vectors *****
+
 
 ```{r}
 yhat <- predict(svmply.fit)
@@ -147,14 +142,14 @@ table(predict=yhat, truth=OJ$Purchase[test])
 ```
 The test error rate is 
 
-```{r}
 
+```{r}
 tuneply.out <- tune(svm,Purchase~.,data=OJ[train,],kernel="radial",ranges=list(cost=c(0.01,0.05,0.1,0.5,1,5,10)))
 summary(tuneply.out)
 ```
 
 ```{r}
-bestmodrad <- tuneply.out$best.model
+bestmodply <- tuneply.out$best.model
 summary(bestmodply)
 ```
 
@@ -162,8 +157,6 @@ summary(bestmodply)
 yhat <- predict(svmply.fit)
 
 table(predict=yhat, truth=OJ$Purchase[train])
-
-
 ```
 The training error rate is 
 
@@ -172,8 +165,6 @@ The training error rate is
 table(predict=yhat, truth=OJ$Purchase[test])
 ```
 The test error rate is 
-
-
 
 
 
@@ -182,7 +173,31 @@ The test error rate is
 (h) Repeat parts (b) through (e) using a linear support vector machine, applied to an expanded feature set consisting of linear and all possible quadratic terms for the predictors. How does this compare to the polynomial kernel both conceptually and in terms of the results for this problem?
 ```{r}
 
-svmexp.fit <- svm(Purchase~.,data=OJ[train,],kernel="radial")
+df = subset(mydata, select = -c(x,z) )
+
+
+
+pp <- OJ[,unlist(lapply(OJ, is.numeric))]
+pp <- subset(pp, select = -c(StoreID,SpecialCH,SpecialMM,STORE))
+pp <- na.omit((pp))
+
+summary(pp)
+
+str(pp)
+
+ppp <- as.matrix((pp))
+
+pppp <- poly(ppp,degree=2,raw=TRUE)
+
+?poly
+
+pp
+
+summary(OJ)
+
+?svm
+
+svmexp.fit <- svm(Purchase~pppp,data=OJ[train,],kernel="radial")
 summary(svmexp.fit)
 
 
