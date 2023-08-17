@@ -169,29 +169,26 @@ table(predict=yhat, truth=OJ$Purchase[test])
 The test error rate is the count of errors made over the total count or (135+102)/535 = 0.443
 
 
-
-
-
-(h) Repeat parts (b) through (e) using a linear support vector machine, applied to an expanded feature set consisting of linear and all possible quadratic terms for the predictors. How does this compare to the polynomial kernel both conceptually and in terms of the results for this problem?
-
-The results are not as good. This model is simpler in that it is a linear model; only the predictors have been transformed.
+### h)
+The results are not as good. This model is simpler in that it is a linear model; only the predictors have been transformed. This is a similar approach to transforming the predictors for a linear regression model.
 
 ```{r}
 svmexp.fit <- svm(Purchase~.+poly(PriceDiff,2)+poly(ListPriceDiff,2)+poly(DiscMM,2)+poly(LoyalCH,2)+poly(SalePriceMM,2)+poly(SalePriceCH,2)+poly(PctDiscMM,2)+poly(PctDiscCH,2),data=OJ[train,],kernel="linear")
 summary(svmexp.fit)
 ```
+This SVM has 200 support vectors with 97 and 103 in the classes.
 
 ```{r}
 yhat <- predict(svmexp.fit)
 
 table(predict=yhat, truth=OJ$Purchase[train])
 ```
-The training error rate is the count of errors made over the total count or (49+24)/535 = ****
+The training error rate is the count of errors made over the total count or (43+34)/535 = 0.146
 
 ```{r}
 table(predict=yhat, truth=OJ$Purchase[test])
 ```
-The test error rate is the count of errors made over the total count or (49+24)/535 = ****
+The test error rate is the count of errors made over the total count or (132+117)/535 = 0.465
 
 ```{r}
 
@@ -203,6 +200,8 @@ summary(tuneexp.out)
 bestmodexp <- tuneexp.out$best.model
 summary(bestmodexp)
 ```
+This optimal SVM has a cost of 10 and 195 support vectors with 97 and 98 in the 2 classes.
+
 
 ```{r}
 yhat <- predict(bestmodexp)
@@ -220,7 +219,5 @@ table(predict=yhat, truth=OJ$Purchase[test])
 The test error rate is the count of errors made over the total count or (130+117)/535 = 0.462
 
 
-
-
-(i) Overall, which approach seems to give the best results on this data?
-The polynomial model has the best fit for the test data.
+### i)
+The polynomial model has the best fit for the test data (0.443). Its 215 support vectors indicate that it is also at the mid-range of complexity for the various SVMs assesed here.
