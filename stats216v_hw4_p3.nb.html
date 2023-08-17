@@ -1772,11 +1772,10 @@ display: none;
 <pre class="r"><code>summary(svm.fit)
 </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxuc3ZtKGZvcm11bGEgPSBQdXJjaGFzZSB+IC4sIGRhdGEgPSBPSlt0cmFpbiwgXSwga2VybmVsID0gXCJsaW5lYXJcIiwgXG4gICAgY29zdCA9IDEpXG5cblxuUGFyYW1ldGVyczpcbiAgIFNWTS1UeXBlOiAgQy1jbGFzc2lmaWNhdGlvbiBcbiBTVk0tS2VybmVsOiAgbGluZWFyIFxuICAgICAgIGNvc3Q6ICAxIFxuXG5OdW1iZXIgb2YgU3VwcG9ydCBWZWN0b3JzOiAgMjAyXG5cbiAoIDEwMiAxMDAgKVxuXG5cbk51bWJlciBvZiBDbGFzc2VzOiAgMiBcblxuTGV2ZWxzOiBcbiBDSCBNTVxuIn0= -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxuc3ZtKGZvcm11bGEgPSBQdXJjaGFzZSB+IC4sIGRhdGEgPSBPSlt0cmFpbiwgXSwga2VybmVsID0gXCJsaW5lYXJcIiwgY29zdCA9IDEpXG5cblxuUGFyYW1ldGVyczpcbiAgIFNWTS1UeXBlOiAgQy1jbGFzc2lmaWNhdGlvbiBcbiBTVk0tS2VybmVsOiAgbGluZWFyIFxuICAgICAgIGNvc3Q6ICAxIFxuXG5OdW1iZXIgb2YgU3VwcG9ydCBWZWN0b3JzOiAgMjAyXG5cbiAoIDEwMiAxMDAgKVxuXG5cbk51bWJlciBvZiBDbGFzc2VzOiAgMiBcblxuTGV2ZWxzOiBcbiBDSCBNTVxuIn0= -->
 <pre><code>
 Call:
-svm(formula = Purchase ~ ., data = OJ[train, ], kernel = &quot;linear&quot;, 
-    cost = 1)
+svm(formula = Purchase ~ ., data = OJ[train, ], kernel = &quot;linear&quot;, cost = 1)
 
 
 Parameters:
@@ -1796,11 +1795,11 @@ Levels:
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>The SVM machine has 202 support vectors with 102 in the CH class and
-100 in the MM class.</p>
-<ol start="3" style="list-style-type: lower-alpha">
-<li>What are the training and test error rates?</li>
-</ol>
+<p>The SVM machine has 202 support vectors with 102 and 100 in the
+classes.</p>
+</div>
+<div id="c-what-are-the-training-and-test-error-rates" class="section level3">
+<h3>c) What are the training and test error rates?</h3>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0cmFpbl0pXG5cbmBgYCJ9 -->
@@ -1852,23 +1851,23 @@ Parameter tuning of ‘svm’:
 
 - best parameters:</code></pre>
 <!-- rnb-output-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MSwibmNvbCI6MSwic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFBNFdTejA2RU1CREdoMy9xa3JEWnhCZnc0SldtcUdUeFlPTEIrQUJHazcxV1FDV3k3YWFVNk5PakxRNVJXaEs1ZFBxYmI2YWRmanpjN1M3alhRd0FBWVNCQjBHa1E0aWVIdS9UQWlEMDljYURFRlptL2RTaTB4RUFyTTE2ZXc3NHpZUVJaL3U2MDhIbUR3eEwwU2xMdUJLOUlrd3BxY1crNmF5VGZvSW5KRDlpLzJ1NUVReFk0MkUrd1h4czhqZG5sTkRNSWJsTk1tcVQzQ0ZibHpoOUNvZGNXeVFqMU9xVE8yVHJuRjdZbW93YTh1L0x6UEkrNW9PcTJXTjRvc1BKcGNGMlJZb1BzbVNoNDNQWnNzNFd4UlZUakx4SVhiL1ErMWdjVkNQNDVIZGtGWHZTQXB1ZW01dFVhZm5XOC9mMDRzcWNnS2JqVDdJVXo4YVBzTmRSelY4YlhrK1hiOWx6M2VKbXJVY2VKeVlIMlhBMWphSnBSNVJRclAzMW9KM0lPQndNMzNMNlI2bEJBd0FBIn0= -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MSwibmNvbCI6MSwic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFBNFdTWDA2RU1CREdoMy9xa3JEWnhBdDRBWnFpSVlzUHhoZmpBY3lhN0dzRlZHSzMzVUNKSHRsVG9DME9VVm9TZWVuME45OU1PLzE0dU50Znhmc1lBQUlJQXcrQ1NJY1FQZTd1MHdJZzlQWEdneEJXWnYzUW92TVJBS3pOZXZzSitNMkVrV0NIdXRQQjVnOE1TOWtwUzdpU3ZTSk1xVmFMZmROWkovMEVUMGgreFA3WGNpTVlzTWJEZklMNTJPUnZMaWlobVVOeW0yVFVKcmxEdGk1eCtoUU91YlpJUnFqVkozZkkxam05c0RVWk5lVGZsNW5sZmN3SFZYUEE4RXlIazB1RDdVb3IzOG1TaFk3UEpXZWRMWW9ycGhoNWJuWDlRdTlUZVZTTkZKUGZrVlhzdFJiWTlNTGNwRXJMMTE2OHBkbWxPUUZOeDU5a0taNk5IMkd2azFxOE5LS2VMcy9aVTgxeHM5WWpqeE9UWTlzSU5ZMmlhVWVVVkl6L2VzQW5NZzRId3pmWVd6NFdRUU1BQUE9PSJ9 -->
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["cost"],"name":[1],"type":["dbl"],"align":["right"]}],"data":[{"1":"10","_rn_":""}],"options":{"columns":{"min":{},"max":[10],"total":[1]},"rows":{"min":[10],"max":[10],"total":[1]},"pages":{}}}
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["cost"],"name":[1],"type":["dbl"],"align":["right"]}],"data":[{"1":"0.75","_rn_":""}],"options":{"columns":{"min":{},"max":[10],"total":[1]},"rows":{"min":[10],"max":[10],"total":[1]},"pages":{}}}
   </script>
 </div>
 <!-- rnb-frame-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG4tIGJlc3QgcGVyZm9ybWFuY2U6IDAuMTU1MTcxMiBcblxuLSBEZXRhaWxlZCBwZXJmb3JtYW5jZSByZXN1bHRzOlxuIn0= -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG4tIGJlc3QgcGVyZm9ybWFuY2U6IDAuMTUxMzI3NyBcblxuLSBEZXRhaWxlZCBwZXJmb3JtYW5jZSByZXN1bHRzOlxuIn0= -->
 <pre><code>
-- best performance: 0.1551712 
+- best performance: 0.1513277 
 
 - Detailed performance results:</code></pre>
 <!-- rnb-output-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MTMsIm5jb2wiOjMsInN1bW1hcnkiOltdfSwicmRmIjoiSDRzSUFBQUFBQUFBQXd0eWlURG1pdUJpWUdCZ1ptQmhabVJnWmdVeUdWaERROXgwTFJnWVdKaUFIRVlHRmdaT0VGMEJWQ1FNVnNuQXdBZkV2UFl0VlEvZDE0bFUyNitjQ1FLejdIZEM2UWNNWUdEL0xBME03RjlBK2ErTndjRCtIVlQ4QTBUY1FRUkt5MEZwQlNpdHdnQURFUHNPUDRyL3VrbG9yZjBSNmZreUdnMHRDRHF5YUkwazkwTDdJOVBkYkRpbjdiVS9jdm5MeHRtek91eVBURk5VWE0yZmcrREQ2SXVyYXU1MVA3VS9jcUUxcVlGbENwdytmR2RaNGMwOGNiaDlTMFVFYS9jOU5iVmZYTGhZZC9XaE52djV0d1QybnRGNGFMOWdsZnl5TWdZZCs0VmVkbXRuSkNqWUwzSS9HTENhOFovOVFuV0RXMmQ5ZHNMNWNIcjFocXhETE1yMmk1ZE42emtiN0lDZ3pWOEZYaElWUXd0bzFyekUzTlJpSUVNQUVpMWdRWmJrL09JU21JTFVvcUw4SWlpSEt5V3p1Q0MxcURnelB3L05ITTZpL0hJOW1GbThRTXpVQUFsTVhuUUxrM01TaTJFV01zTE5UU3hKMUVzckF1b0g4djZoYVdIUEx5Z0IyZ2pVeEFSS0VxeG9taG1MMEFRRVN2TkFMa25SVGM0b3pjdldOVElCMlFDV2h6c0p6T1pGWWpORDdHVDZEeldMRldvV1cycGVlbVplS3N6eE9ZbEpxVGxRRGgvUXkyQWY2eFVVWmViQndvc0xLRnFzVjVKZmtnaFR4NVdjbndNVEFYdU80UjhBU0I5NHB3b0RBQUE9In0= -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MTMsIm5jb2wiOjMsInN1bW1hcnkiOltdfSwicmRmIjoiSDRzSUFBQUFBQUFBQXd0eWlURG1pdUJpWUdCZ1ptQmhabVJnWmdVeUdWaERROXgwTFJnWVdKaUFIRVlHRmdaT0VGMEJWQ1FNVnNuQXdBZkV2UFl0VlEvZDE0bFUyNitjQ1FLejdIZEM2UWNNWUdEL0xBME03RjlBK2ErTndjRCtIVlQ4QTBUY1FRUkt5MEZwQlNpdHdnQURFUHVPY3N6UG0vNWFDazRmQ1pyQysvRCtMdnNqd1RzMUhOSzU3QS9QNlZpcmZTWFMvbkRjVmxsclQxc0VIWC9MZk9hRlB2dkROODJWOXQ1UXNUL0t3N2QzY3lPZi9WSFBSNzVMZUxUZzlKRkpHeS8xVjFiQTdWc3FGcm5PNVphei9iSS9Nd3VuLzU5bHY1VGg5ZzIzYTIzMnl6ZDBiUmZnUEdhLzR2Q2o3emRmWHJCZm9YR0E5VllwTTV4ZTFuQnd3NVdzVXZzVmFWN1pCcTFWOWt2M3JDbVZjT1MyWDlhemZsV2t5VTA0dlZUcGFlVEhpMHZRQXBvMUx6RTN0UmpJRUlCRUMxaVFKVG0vdUFTbUlMV29LTDhJeXVGS3lTd3VTQzBxenN6UFF6T0hzeWkvWEE5bUZpOFFNelZBQXBNWDNjTGtuTVJpbUlXTWNITVRTeEwxMG9xQStvRzhmMmhhMlBNTFNvQTJBalV4Z1pJRUs1cG14aUkwQVlIU1BKQkxVblNUTTByenNuVU5qVUEyZ09YaFRnS3plWkhZekJBN21mNUR6V0tGbXNXV21wZWVtWmNLYzN4T1lsSnFEcFREQi9ReTJNZDZCVVdaZWJEdzRnS0tGdXVWNUpja3d0UnhKZWZud0VUQW5tUDRCd0RDdkhnN0NnTUFBQT09In0= -->
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["cost"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["error"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["dispersion"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"0.01","2":"0.1553459","3":"0.04116873"},{"1":"0.05","2":"0.1570929","3":"0.03797636"},{"1":"0.10","2":"0.1570929","3":"0.03110529"},{"1":"0.50","2":"0.1589797","3":"0.03254794"},{"1":"0.70","2":"0.1608665","3":"0.03376957"},{"1":"0.75","2":"0.1627184","3":"0.03570370"},{"1":"0.85","2":"0.1608316","3":"0.03350213"},{"1":"0.95","2":"0.1627184","3":"0.03570370"},{"1":"1.00","2":"0.1627184","3":"0.03570370"},{"1":"5.00","2":"0.1626485","3":"0.03646613"},{"1":"7.50","2":"0.1626136","3":"0.03838034"},{"1":"8.00","2":"0.1626136","3":"0.03838034"},{"1":"10.00","2":"0.1551712","3":"0.03753597"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[13]},"pages":{}}}
+{"columns":[{"label":["cost"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["error"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["dispersion"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"0.01","2":"0.1643256","3":"0.04118614"},{"1":"0.05","2":"0.1643256","3":"0.04489593"},{"1":"0.10","2":"0.1587701","3":"0.04102218"},{"1":"0.50","2":"0.1588050","3":"0.04626878"},{"1":"0.70","2":"0.1532145","3":"0.04836950"},{"1":"0.75","2":"0.1513277","3":"0.04718590"},{"1":"0.85","2":"0.1513277","3":"0.04718590"},{"1":"0.95","2":"0.1513627","3":"0.04395108"},{"1":"1.00","2":"0.1550664","3":"0.04765542"},{"1":"5.00","2":"0.1644305","3":"0.04245509"},{"1":"7.50","2":"0.1663173","3":"0.04404210"},{"1":"8.00","2":"0.1663173","3":"0.04404210"},{"1":"10.00","2":"0.1607268","3":"0.04128186"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[13]},"pages":{}}}
   </script>
 </div>
 <!-- rnb-frame-end -->
@@ -1877,7 +1876,7 @@ Parameter tuning of ‘svm’:
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>An optimal cost is 10.</p>
+<p>An optimal cost is 0.75.</p>
 </div>
 <div id="e" class="section level3">
 <h3>e)</h3>
@@ -1887,22 +1886,21 @@ Parameter tuning of ‘svm’:
 <pre class="r"><code>summary(bestmod)
 </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxuYmVzdC50dW5lKE1FVEhPRCA9IHN2bSwgdHJhaW4ueCA9IFB1cmNoYXNlIH4gLiwgZGF0YSA9IE9KW3RyYWluLCBcbiAgICBdLCByYW5nZXMgPSBsaXN0KGNvc3QgPSBjKDAuMDEsIDAuMDUsIDAuMSwgMC41LCBcbiAgICAwLjcsIDAuNzUsIDAuODUsIDAuOTUsIDEsIDUsIDcuNSwgOCwgMTApKSwga2VybmVsID0gXCJsaW5lYXJcIilcblxuXG5QYXJhbWV0ZXJzOlxuICAgU1ZNLVR5cGU6ICBDLWNsYXNzaWZpY2F0aW9uIFxuIFNWTS1LZXJuZWw6ICBsaW5lYXIgXG4gICAgICAgY29zdDogIDEwIFxuXG5OdW1iZXIgb2YgU3VwcG9ydCBWZWN0b3JzOiAgMjAxXG5cbiAoIDEwMCAxMDEgKVxuXG5cbk51bWJlciBvZiBDbGFzc2VzOiAgMiBcblxuTGV2ZWxzOiBcbiBDSCBNTVxuIn0= -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxuYmVzdC50dW5lKE1FVEhPRCA9IHN2bSwgdHJhaW4ueCA9IFB1cmNoYXNlIH4gLiwgZGF0YSA9IE9KW3RyYWluLCBdLCByYW5nZXMgPSBsaXN0KGNvc3QgPSBjKDAuMDEsIFxuICAgIDAuMDUsIDAuMSwgMC41LCAwLjcsIDAuNzUsIDAuODUsIDAuOTUsIDEsIDUsIDcuNSwgOCwgMTApKSwga2VybmVsID0gXCJsaW5lYXJcIilcblxuXG5QYXJhbWV0ZXJzOlxuICAgU1ZNLVR5cGU6ICBDLWNsYXNzaWZpY2F0aW9uIFxuIFNWTS1LZXJuZWw6ICBsaW5lYXIgXG4gICAgICAgY29zdDogIDAuNzUgXG5cbk51bWJlciBvZiBTdXBwb3J0IFZlY3RvcnM6ICAyMDVcblxuICggMTA0IDEwMSApXG5cblxuTnVtYmVyIG9mIENsYXNzZXM6ICAyIFxuXG5MZXZlbHM6IFxuIENIIE1NXG4ifQ== -->
 <pre><code>
 Call:
-best.tune(METHOD = svm, train.x = Purchase ~ ., data = OJ[train, 
-    ], ranges = list(cost = c(0.01, 0.05, 0.1, 0.5, 
-    0.7, 0.75, 0.85, 0.95, 1, 5, 7.5, 8, 10)), kernel = &quot;linear&quot;)
+best.tune(METHOD = svm, train.x = Purchase ~ ., data = OJ[train, ], ranges = list(cost = c(0.01, 
+    0.05, 0.1, 0.5, 0.7, 0.75, 0.85, 0.95, 1, 5, 7.5, 8, 10)), kernel = &quot;linear&quot;)
 
 
 Parameters:
    SVM-Type:  C-classification 
  SVM-Kernel:  linear 
-       cost:  10 
+       cost:  0.75 
 
-Number of Support Vectors:  201
+Number of Support Vectors:  205
 
- ( 100 101 )
+ ( 104 101 )
 
 
 Number of Classes:  2 
@@ -1918,100 +1916,204 @@ Levels:
 <pre class="r"><code>table(predict=yhat, truth=OJ$Purchase[train])
 </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIHRydXRoXG5wcmVkaWN0ICBDSCAgTU1cbiAgICAgQ0ggMjk5ICA0NFxuICAgICBNTSAgMzEgMTYxXG4ifQ== -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIHRydXRoXG5wcmVkaWN0ICBDSCAgTU1cbiAgICAgQ0ggMjk0ICA0MFxuICAgICBNTSAgMzYgMTY1XG4ifQ== -->
 <pre><code>       truth
 predict  CH  MM
-     CH 299  44
-     MM  31 161</code></pre>
+     CH 294  40
+     MM  36 165</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>The training error rate is the count of errors made over the tootal
-count or (44+31)/(201+80+132+122) = 0.14</p>
+<p>The training error rate is the count of errors made over the total
+count or (40+36)/535 = 0.14</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0ZXN0XSlcblxuYGBgIn0= -->
 <pre class="r"><code>table(predict=yhat, truth=OJ$Purchase[test])
 </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIHRydXRoXG5wcmVkaWN0ICBDSCAgTU1cbiAgICAgQ0ggMjExIDEzMlxuICAgICBNTSAxMTIgIDgwXG4ifQ== -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIHRydXRoXG5wcmVkaWN0ICBDSCAgTU1cbiAgICAgQ0ggMjAxIDEzM1xuICAgICBNTSAxMjIgIDc5XG4ifQ== -->
 <pre><code>       truth
 predict  CH  MM
-     CH 211 132
-     MM 112  80</code></pre>
+     CH 201 133
+     MM 122  79</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>The test error rate is the count of errors made over the tootal count
-or (132+112)/(201+80+132+122) = 0.46</p>
+or (133+122)/535 = 0.48</p>
 <ol start="6" style="list-style-type: lower-alpha">
 <li>Repeat parts (b) through (e) using a support vector machine with a
 radial kernel. Use the default value for gamma.</li>
 </ol>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5zdm1yYWQuZml0IDwtIHN2bShQdXJjaGFzZX4uLGRhdGE9T0pbdHJhaW4sXSxrZXJuZWw9XCJyYWRpYWxcIilcbnN1bW1hcnkoc3ZtcmFkLmZpdClcblxuXG5cbmBgYCJ9 -->
-<pre class="r"><code>
-svmrad.fit &lt;- svm(Purchase~.,data=OJ[train,],kernel=&quot;radial&quot;)
-summary(svmrad.fit)
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeShzdm1yYWQuZml0KVxuXG5gYGAifQ== -->
+<pre class="r"><code>summary(svmrad.fit)
 </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueWhhdCA8LSBwcmVkaWN0KHN2bXJhZC5maXQpXG5cbnRhYmxlKHByZWRpY3Q9eWhhdCwgdHJ1dGg9T0okUHVyY2hhc2VbdHJhaW5dKVxuYGBgIn0= -->
-<pre class="r"><code>yhat &lt;- predict(svmrad.fit)
+<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxuc3ZtKGZvcm11bGEgPSBQdXJjaGFzZSB+IC4sIGRhdGEgPSBPSlt0cmFpbiwgXSwga2VybmVsID0gXCJyYWRpYWxcIilcblxuXG5QYXJhbWV0ZXJzOlxuICAgU1ZNLVR5cGU6ICBDLWNsYXNzaWZpY2F0aW9uIFxuIFNWTS1LZXJuZWw6ICByYWRpYWwgXG4gICAgICAgY29zdDogIDEgXG5cbk51bWJlciBvZiBTdXBwb3J0IFZlY3RvcnM6ICAyNjBcblxuICggMTI3IDEzMyApXG5cblxuTnVtYmVyIG9mIENsYXNzZXM6ICAyIFxuXG5MZXZlbHM6IFxuIENIIE1NXG4ifQ== -->
+<pre><code>
+Call:
+svm(formula = Purchase ~ ., data = OJ[train, ], kernel = &quot;radial&quot;)
 
-table(predict=yhat, truth=OJ$Purchase[train])</code></pre>
-<!-- rnb-source-end -->
+
+Parameters:
+   SVM-Type:  C-classification 
+ SVM-Kernel:  radial 
+       cost:  1 
+
+Number of Support Vectors:  260
+
+ ( 127 133 )
+
+
+Number of Classes:  2 
+
+Levels: 
+ CH MM</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>The training error rate is</p>
+<p>The SVM machine has 260 support vectors with 127 and 133 in the
+classes.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0ZXN0XSlcbmBgYCJ9 -->
-<pre class="r"><code>table(predict=yhat, truth=OJ$Purchase[test])</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0cmFpbl0pXG5cbmBgYCJ9 -->
+<pre class="r"><code>table(predict=yhat, truth=OJ$Purchase[train])
+</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIHRydXRoXG5wcmVkaWN0ICBDSCAgTU1cbiAgICAgQ0ggMzA2ICA0OVxuICAgICBNTSAgMjQgMTU2XG4ifQ== -->
+<pre><code>       truth
+predict  CH  MM
+     CH 306  49
+     MM  24 156</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>The test error rate is</p>
+<p>The training error rate is the count of errors made over the total
+count or (49+24)/535 = 0.136</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG50dW5lcmFkLm91dCA8LSB0dW5lKHN2bSxQdXJjaGFzZX4uLGRhdGE9T0pbdHJhaW4sXSxrZXJuZWw9XCJyYWRpYWxcIixyYW5nZXM9bGlzdChjb3N0PWMoMC4wMSwwLjA1LDAuMSwwLjUsMSw1LDEwKSkpXG5zdW1tYXJ5KHR1bmVyYWQub3V0KVxuYGBgIn0= -->
-<pre class="r"><code>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0ZXN0XSlcblxuYGBgIn0= -->
+<pre class="r"><code>table(predict=yhat, truth=OJ$Purchase[test])
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIHRydXRoXG5wcmVkaWN0ICBDSCAgTU1cbiAgICAgQ0ggMjIwIDEzNVxuICAgICBNTSAxMDMgIDc3XG4ifQ== -->
+<pre><code>       truth
+predict  CH  MM
+     CH 220 135
+     MM 103  77</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>The test error rate is the count of errors made over the total count
+or (135+103)/535 = 0.445</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudHVuZXJhZC5vdXQgPC0gdHVuZShzdm0sUHVyY2hhc2V+LixkYXRhPU9KW3RyYWluLF0sa2VybmVsPVwicmFkaWFsXCIscmFuZ2VzPWxpc3QoY29zdD1jKDAuMDEsMC4wNSwwLjEsMC41LDEsNSwxMCkpKVxudHVuZXJhZC5vdXQgPC0gdHVuZShzdm0sUHVyY2hhc2V+LixkYXRhPU9KW3RyYWluLF0sa2VybmVsPVwicmFkaWFsXCIscmFuZ2VzPWxpc3QoY29zdD1jKDAuMDEsMC4wNSwwLjEsMC41LDEsNSwxMCkpKVxuc3VtbWFyeSh0dW5lcmFkLm91dClcblxuYGBgIn0= -->
+<pre class="r"><code>tunerad.out &lt;- tune(svm,Purchase~.,data=OJ[train,],kernel=&quot;radial&quot;,ranges=list(cost=c(0.01,0.05,0.1,0.5,1,5,10)))
 tunerad.out &lt;- tune(svm,Purchase~.,data=OJ[train,],kernel=&quot;radial&quot;,ranges=list(cost=c(0.01,0.05,0.1,0.5,1,5,10)))
-summary(tunerad.out)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYmVzdG1vZHJhZCA8LSB0dW5lcmFkLm91dCRiZXN0Lm1vZGVsXG5zdW1tYXJ5KGJlc3Rtb2RyYWQpXG5gYGAifQ== -->
-<pre class="r"><code>bestmodrad &lt;- tunerad.out$best.model
-summary(bestmodrad)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueWhhdCA8LSBwcmVkaWN0KHN2bXJhZC5maXQpXG5cbnRhYmxlKHByZWRpY3Q9eWhhdCwgdHJ1dGg9T0okUHVyY2hhc2VbdHJhaW5dKVxuXG5cbmBgYCJ9 -->
-<pre class="r"><code>yhat &lt;- predict(svmrad.fit)
-
-table(predict=yhat, truth=OJ$Purchase[train])
+summary(tunerad.out)
 </code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5QYXJhbWV0ZXIgdHVuaW5nIG9mIOKAmHN2beKAmTpcblxuLSBzYW1wbGluZyBtZXRob2Q6IDEwLWZvbGQgY3Jvc3MgdmFsaWRhdGlvbiBcblxuLSBiZXN0IHBhcmFtZXRlcnM6XG4ifQ== -->
+<pre><code>
+Parameter tuning of ‘svm’:
+
+- sampling method: 10-fold cross validation 
+
+- best parameters:</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MSwibmNvbCI6MSwic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFBNFdSM1VyRE1CVEhUOVBHYm9XTmdUNkFMOUNRT2dyZUNGNklEeUFPZGh2YlRvdFpNdElVZmZwcVVoTzBXY0ZDeWNudi9NL0orWGg2MkcremZRWUFNU1J4QkRFMkp1RGQ4Mk4rQzVBZ2M0a2dnYVU5UDQzb2NnUUFhM3ZlWDRIN0prSXMyTEhwakxINUE1Tktkam9RTG1XdkNkTmFHVEd5bVkwVHJkd0w2WThZZmMwbmdzSEZSTTZmT245bS9YZlhsTkRpakpRaEtXaEl5b0FVaEFha0RFbEJMZm0zMm9rZk9YOWN0MGRuTG96cEp6ZUVrMUx5Zzh5TjlXejJGV2RkS01wcXBoazVLQk0va3p1Vko5MUs0WGVBZytCSUJXRFRDMXRKblZkdnZYalBiN2IyQmJjSSs2L203VW43Mk9XNmFNUnJLeHBmUEdjdkRYZVh0V2w1N0ppY1ZDdTBiOFhRam1pcEdmL2RBZmRrYkE2R2I4OUVHN1hWQWdBQSJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["cost"],"name":[1],"type":["dbl"],"align":["right"]}],"data":[{"1":"5","_rn_":""}],"options":{"columns":{"min":{},"max":[10],"total":[1]},"rows":{"min":[10],"max":[10],"total":[1]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG4tIGJlc3QgcGVyZm9ybWFuY2U6IDAuMTY2MzE3MyBcblxuLSBEZXRhaWxlZCBwZXJmb3JtYW5jZSByZXN1bHRzOlxuIn0= -->
+<pre><code>
+- best performance: 0.1663173 
+
+- Detailed performance results:</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NywibmNvbCI6Mywic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFBd3R5aVREbWl1QmlZR0JnWm1CaFptUmdaZ1V5R1ZoRFE5eDBMUmdZV0ppQUhFWUdGZ1pPRUYwQlZDUU1Wc25Bd0FmRTdQWXRWUS9kMTRsVTI2K2NDUUt6N0hkQzZRY01ZR0QvQVVJN2lFQnBGUVlZZ09pLzBaNmNwOFZvWVg5bDA0RXR6OXdpN0UrZEtUVHBkMnEyUC9iZCtwMk04eS83WXo4U09hcE8rOWdmOVh6a3U0Ukh5LzVvKzlhN1U2YTd3Zld2Tjl2NzNTbVl5MzVUZmQrQldlK1gyeTlxT1ArdHJIcUgvZktQanB3aGkxTHNseDY1MnNuNThyMzkwcUM2bUlTNUt2YUxXUmRFcWRXa29ubU1OUzh4TjdVWXlCQ0FCQU5Za0NVNXY3Z0VwaUMxcUNpL0NNcmhTc2tzTGtndEtzN016ME16aDdNb3Yxd1BaaFl2RURNMVFEekxqbTVoY2s1aU1jeENScmk1aVNXSmVtbEZRUDFBM2o4MExlejVCU1ZBRzRHYW1FQlJ3SXFtbWJFSVRVQ2dOQS9ra2hUZDVJelN2R3hkSTJPUURXQjVDT0NGc3RtUjJNd1FPNW4rUTgxaWhackZscHFYbnBtWENuTjhUbUpTYWc2VXd3ZjBNdGpIZWdWRm1YbXc4T0lDaWhicmxlU1hKTUxVY1NYbjU4QkV3SjVqK0FjQTZVMWk3bm9DQUFBPSJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["cost"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["error"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["dispersion"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"0.01","2":"0.3832635","3":"0.06096452"},{"1":"0.05","2":"0.3234102","3":"0.07225887"},{"1":"0.10","2":"0.2093641","3":"0.03613901"},{"1":"0.50","2":"0.1794200","3":"0.04676250"},{"1":"1.00","2":"0.1794549","3":"0.04251735"},{"1":"5.00","2":"0.1663173","3":"0.04164500"},{"1":"10.00","2":"0.1682041","3":"0.03715230"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[7]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiTkFcbiJ9 -->
+<pre><code>NA</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>The training error rate is</p>
+<p>Best model is at a cost of 5.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0ZXN0XSlcbmBgYCJ9 -->
-<pre class="r"><code>table(predict=yhat, truth=OJ$Purchase[test])</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeShiZXN0bW9kcmFkKVxuXG5gYGAifQ== -->
+<pre class="r"><code>summary(bestmodrad)
+</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxuYmVzdC50dW5lKE1FVEhPRCA9IHN2bSwgdHJhaW4ueCA9IFB1cmNoYXNlIH4gLiwgZGF0YSA9IE9KW3RyYWluLCBdLCByYW5nZXMgPSBsaXN0KGNvc3QgPSBjKDAuMDEsIFxuICAgIDAuMDUsIDAuMSwgMC41LCAxLCA1LCAxMCkpLCBrZXJuZWwgPSBcInJhZGlhbFwiKVxuXG5cblBhcmFtZXRlcnM6XG4gICBTVk0tVHlwZTogIEMtY2xhc3NpZmljYXRpb24gXG4gU1ZNLUtlcm5lbDogIHJhZGlhbCBcbiAgICAgICBjb3N0OiAgNSBcblxuTnVtYmVyIG9mIFN1cHBvcnQgVmVjdG9yczogIDIxOFxuXG4gKCAxMDUgMTEzIClcblxuXG5OdW1iZXIgb2YgQ2xhc3NlczogIDIgXG5cbkxldmVsczogXG4gQ0ggTU1cbiJ9 -->
+<pre><code>
+Call:
+best.tune(METHOD = svm, train.x = Purchase ~ ., data = OJ[train, ], ranges = list(cost = c(0.01, 
+    0.05, 0.1, 0.5, 1, 5, 10)), kernel = &quot;radial&quot;)
+
+
+Parameters:
+   SVM-Type:  C-classification 
+ SVM-Kernel:  radial 
+       cost:  5 
+
+Number of Support Vectors:  218
+
+ ( 105 113 )
+
+
+Number of Classes:  2 
+
+Levels: 
+ CH MM</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>The test error rate is</p>
+<p>This SVM has 218 support vectors wiht 105 and 113 in each class.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0cmFpbl0pXG5cbmBgYCJ9 -->
+<pre class="r"><code>table(predict=yhat, truth=OJ$Purchase[train])
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIHRydXRoXG5wcmVkaWN0ICBDSCAgTU1cbiAgICAgQ0ggMzA2ICA0MlxuICAgICBNTSAgMjQgMTYzXG4ifQ== -->
+<pre><code>       truth
+predict  CH  MM
+     CH 306  42
+     MM  24 163</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>The training error rate is the count of errors made over the total
+count or (42+24)/535 = 0.123</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0ZXN0XSlcblxuYGBgIn0= -->
+<pre class="r"><code>table(predict=yhat, truth=OJ$Purchase[test])
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIHRydXRoXG5wcmVkaWN0ICBDSCAgTU1cbiAgICAgQ0ggMjE2IDEzMlxuICAgICBNTSAxMDcgIDgwXG4ifQ== -->
+<pre><code>       truth
+predict  CH  MM
+     CH 216 132
+     MM 107  80</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>The test error rate is the count of errors made over the total count
+or (132+107)/535 = 0.447</p>
 </div>
 <div id="g" class="section level3">
 <h3>g)</h3>
@@ -2021,11 +2123,10 @@ table(predict=yhat, truth=OJ$Purchase[train])
 <pre class="r"><code>summary(svmply.fit)
 </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxuc3ZtKGZvcm11bGEgPSBQdXJjaGFzZSB+IC4sIGRhdGEgPSBPSlt0cmFpbiwgXSwga2VybmVsID0gXCJwb2x5bm9taWFsXCIsIFxuICAgIGRlZ3JlZSA9IDIpXG5cblxuUGFyYW1ldGVyczpcbiAgIFNWTS1UeXBlOiAgQy1jbGFzc2lmaWNhdGlvbiBcbiBTVk0tS2VybmVsOiAgcG9seW5vbWlhbCBcbiAgICAgICBjb3N0OiAgMSBcbiAgICAgZGVncmVlOiAgMiBcbiAgICAgY29lZi4wOiAgMCBcblxuTnVtYmVyIG9mIFN1cHBvcnQgVmVjdG9yczogIDMxNVxuXG4gKCAxNTMgMTYyIClcblxuXG5OdW1iZXIgb2YgQ2xhc3NlczogIDIgXG5cbkxldmVsczogXG4gQ0ggTU1cbiJ9 -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxuc3ZtKGZvcm11bGEgPSBQdXJjaGFzZSB+IC4sIGRhdGEgPSBPSlt0cmFpbiwgXSwga2VybmVsID0gXCJwb2x5bm9taWFsXCIsIGRlZ3JlZSA9IDIpXG5cblxuUGFyYW1ldGVyczpcbiAgIFNWTS1UeXBlOiAgQy1jbGFzc2lmaWNhdGlvbiBcbiBTVk0tS2VybmVsOiAgcG9seW5vbWlhbCBcbiAgICAgICBjb3N0OiAgMSBcbiAgICAgZGVncmVlOiAgMiBcbiAgICAgY29lZi4wOiAgMCBcblxuTnVtYmVyIG9mIFN1cHBvcnQgVmVjdG9yczogIDMxNVxuXG4gKCAxNTMgMTYyIClcblxuXG5OdW1iZXIgb2YgQ2xhc3NlczogIDIgXG5cbkxldmVsczogXG4gQ0ggTU1cbiJ9 -->
 <pre><code>
 Call:
-svm(formula = Purchase ~ ., data = OJ[train, ], kernel = &quot;polynomial&quot;, 
-    degree = 2)
+svm(formula = Purchase ~ ., data = OJ[train, ], kernel = &quot;polynomial&quot;, degree = 2)
 
 
 Parameters:
@@ -2047,7 +2148,8 @@ Levels:
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>Now 315 support vectors *****</p>
+<p>The SVM now has 315 support vectors with 153 and 162 in the
+classes.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0cmFpbl0pXG5cbmBgYCJ9 -->
@@ -2062,7 +2164,8 @@ predict  CH  MM
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>The training error rate is</p>
+<p>The training error rate is the count of errors made over the total
+count or (80+20)/535 = 0.187</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0ZXN0XSlcblxuYGBgIn0= -->
@@ -2077,11 +2180,14 @@ predict  CH  MM
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>The test error rate is</p>
+<p>The test error rate is the count of errors made over the total count
+or (152+85)/535 = 0.443</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeSh0dW5lcGx5Lm91dClcblxuYGBgIn0= -->
-<pre class="r"><code>summary(tuneply.out)
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudHVuZXBseS5vdXQgPC0gdHVuZShzdm0sUHVyY2hhc2V+LixkYXRhPU9KW3RyYWluLF0sa2VybmVsPVwicG9seW5vbWlhbFwiLHJhbmdlcz1saXN0KGNvc3Q9YygwLjAxLDAuMDUsMC4xLDAuNSwxLDUsMTApKSlcbnR1bmVwbHkub3V0IDwtIHR1bmUoc3ZtLFB1cmNoYXNlfi4sZGF0YT1PSlt0cmFpbixdLGtlcm5lbD1cInBvbHlub21pYWxcIixyYW5nZXM9bGlzdChjb3N0PWMoMC4wMSwwLjA1LDAuMSwwLjUsMSw1LDEwKSkpXG5zdW1tYXJ5KHR1bmVwbHkub3V0KVxuXG5gYGAifQ== -->
+<pre class="r"><code>tuneply.out &lt;- tune(svm,Purchase~.,data=OJ[train,],kernel=&quot;polynomial&quot;,ranges=list(cost=c(0.01,0.05,0.1,0.5,1,5,10)))
+tuneply.out &lt;- tune(svm,Purchase~.,data=OJ[train,],kernel=&quot;polynomial&quot;,ranges=list(cost=c(0.01,0.05,0.1,0.5,1,5,10)))
+summary(tuneply.out)
 </code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiXG5QYXJhbWV0ZXIgdHVuaW5nIG9mIOKAmHN2beKAmTpcblxuLSBzYW1wbGluZyBtZXRob2Q6IDEwLWZvbGQgY3Jvc3MgdmFsaWRhdGlvbiBcblxuLSBiZXN0IHBhcmFtZXRlcnM6XG4ifQ== -->
@@ -2092,23 +2198,23 @@ Parameter tuning of ‘svm’:
 
 - best parameters:</code></pre>
 <!-- rnb-output-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MSwibmNvbCI6MSwic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFBNFdSM1VyRE1CVEhUOVBHYm9XTmdTL2doYmNOS2FQaWplQ0YrQURpWUxleDdiU1lKU05OMGFldkpqVkJteFVzbEp6OHp2K2NuSStuaC8wMjIyY0FFRU1TUnhCall3TGVQVC9tdHdBSk1wY0lFbGphODlPSUxrY0FzTGJuL1RXNGJ5TEVnaDJiemhpYlB6Q3BaS2NENFZMMm1qQ3RsUkVqbTlrNDBjcTlrUDZJMGRkOEloaGNUT1Q4cWZObjFuOTNSUWt0emtnWmtvS0dwQXhJUVdoQXlwQVUxSkovcTUzNGtmUEhkWHQwNXNLWWZuSkRPQ2tsUDhqY1dNOW1YM0hXaGFLc1pwcVJnekx4TTdsVGVkS3RGSDRIT0FpT1ZBQTJ2YkNWMUhuMTFvdjNmSHRqWDNDTHNQOXEzcDYwajEydWkwYTh0cUx4eFhQMjBuQjNXWnVXeDQ3SlNiVkMrMVlNN1lpV212SGZIWEJQeHVaZytBYWhNaHQrMVFJQUFBPT0ifQ== -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MSwibmNvbCI6MSwic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFBNFdSM1VyRE1CVEhUOVBHYm9XTmdTL2doYmNOS2JQZ2plQ0YrQURpWUxleDdiU1lKU05OMGFldkpqVkJteFVzbEp6OHp2K2NuSStuaC8wMjIyY0FFRU1TUnhCall3TGVQVC9tdHdBSk1wY0lFbGphODlPSUxrY0FzTGJuL1RXNGJ5TEVnaDJiemhpYlB6Q3BaS2NENFZMMm1qQ3RsUkVqbTlrNDBjcTlrUDZJMGRkOEloaGNUT1Q4cWZObjFuOTNSUWt0emtnWmtvS0dwQXhJUVdoQXlwQVUxSkovcTUzNGtmUEhkWHQwNXNLWWZuSkRPQ2tsUDhqY1dNOW1YM0hXaGFLc1pwcVJnekx4TTdsVGVkS3RGSDRIT0FpT1ZBQTJ2YkNWMUhuMTFvdjNmSHRqWDNDTHNQOXEzcDYwajEydWkwYTh0cUx4eFhQMjBuQjNXWnVXeDQ3SlNiVkMrMVlNN1lpV212SGZIWEJQeHVaZytBYmxkcWU0MVFJQUFBPT0ifQ== -->
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["cost"],"name":[1],"type":["dbl"],"align":["right"]}],"data":[{"1":"10","_rn_":""}],"options":{"columns":{"min":{},"max":[10],"total":[1]},"rows":{"min":[10],"max":[10],"total":[1]},"pages":{}}}
   </script>
 </div>
 <!-- rnb-frame-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG4tIGJlc3QgcGVyZm9ybWFuY2U6IDAuMTcxODAyOSBcblxuLSBEZXRhaWxlZCBwZXJmb3JtYW5jZSByZXN1bHRzOlxuIn0= -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG4tIGJlc3QgcGVyZm9ybWFuY2U6IDAuMTY4MTM0MiBcblxuLSBEZXRhaWxlZCBwZXJmb3JtYW5jZSByZXN1bHRzOlxuIn0= -->
 <pre><code>
-- best performance: 0.1718029 
+- best performance: 0.1681342 
 
 - Detailed performance results:</code></pre>
 <!-- rnb-output-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NywibmNvbCI6Mywic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFBd3R5aVREbWl1QmlZR0JnWm1CaFptUmdaZ1V5R1ZoRFE5eDBMUmdZV0ppQUhFWUdGZ1pPRUYwQlZDUU1Wc25Bd0FmRTdQWXRWUS9kMTRsVTI2K2NDUUt6N0hkQzZRY01ZR0QvQVVJN2lFQnBGUVlZZ09pLzBianlWV0RNSXZzci9pcjdqbmtldHovRmx5VHQzUHpLL3RnT1orZXpocjMyeHh5NGk5azNldGdmcThyZmZHZFpvZjNSdjRzcjUzSzhnT3ZmTk9WUzRPcGxqUFk3RE5SaWp4VTAyUzkzeUhoL01PcVUvZHp0RjN4bGJzeXhYelRsd290eXhZbjJTemgxbnZ4YktHVy93bmR2eFBvcDdtZ2VZODFMekUwdEJqSUVJTUVBRm1SSnppOHVnU2xJTFNyS0w0Snl1Rkl5aXd0U2k0b3o4L1BRek9Fc3lpL1hnNW5GQzhSTURSRFBzcU5ibUp5VFdBeXprQkZ1Ym1KSm9sNWFFVkEva1BjUFRRdDdma0VKMEVhZ0ppWlFGTENpYVdZc1FoTVFLTTBEdVNSRk56bWpOQzliMTlnTVpBTllIZ0o0b1d4MkpEWXp4RTZtLzFDeldLRm1zYVhtcFdmbXBjSWNuNU9ZbEpvRDVmQUJ2UXoyc1Y1QlVXWWVMTHk0Z0tMRmVpWDVKWWt3ZFZ6SitUa3dFYkRuR1A0QkFDc2tGckY2QWdBQSJ9 -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NywibmNvbCI6Mywic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFBd3R5aVREbWl1QmlZR0JnWm1CaFptUmdaZ1V5R1ZoRFE5eDBMUmdZV0ppQUhFWUdGZ1pPRUYwQlZDUU1Wc25Bd0FmRTdQWXRWUS9kMTRsVTI2K2NDUUt6N0hkQzZRY01ZR0QvQVVJN2lFQnBGUVlZZ09pL2JyaEE3Nk9saXYzVjlxMTNwMHgzczc5aVliYytlWHVoL2NuSTZpdXYvOSsyUDU3bnQ2VFo1cDM5MFVOU2NwazllZlpIVzdOWFhPOVlETmUvV1piUG9iRXp5MzcxZEkram5IVS83TmZ3L002Y25mVE9mbVhGazQ5L09zVHNWK1hLUHVlY1BzTisrWGRWcGtqT0J2dVZUMnZQMTYvWFFQTVlhMTVpYm1veGtDRUFDUWF3SUV0eWZuRUpURUZxVVZGK0VaVERsWkpaWEpCYVZKeVpuNGRtRG1kUmZya2V6Q3hlSUdacWdIaVdIZDNDNUp6RVlwaUZqSEJ6RTBzUzlkS0tnUHFCdkg5b1d0anpDMHFBTmdJMU1ZR2lnQlZOTTJNUm1vQkFhUjdJSlNtNnlSbWxlZG02eGlZZ0c4RHlFTUFMWmJNanNaa2hkakw5aDVyRkNqV0xMVFV2UFRNdkZlYjRuTVNrMUJ3b2h3L29aYkNQOVFxS012Tmc0Y1VGRkMzV0s4a3ZTWVNwNDByT3o0R0pnRDNIOEE4QUtxRHZFWG9DQUFBPSJ9 -->
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["cost"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["error"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["dispersion"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"0.01","2":"0.3829140","3":"0.07258334"},{"1":"0.05","2":"0.3173305","3":"0.09448471"},{"1":"0.10","2":"0.2035639","3":"0.04541328"},{"1":"0.50","2":"0.1774983","3":"0.02902151"},{"1":"1.00","2":"0.1738295","3":"0.03629163"},{"1":"5.00","2":"0.1756115","3":"0.03913250"},{"1":"10.00","2":"0.1718029","3":"0.04746811"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[7]},"pages":{}}}
+{"columns":[{"label":["cost"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["error"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["dispersion"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"0.01","2":"0.3624039","3":"0.07466210"},{"1":"0.05","2":"0.3364081","3":"0.05388858"},{"1":"0.10","2":"0.3159329","3":"0.05478655"},{"1":"0.50","2":"0.1980433","3":"0.04975048"},{"1":"1.00","2":"0.1830538","3":"0.05161375"},{"1":"5.00","2":"0.1699860","3":"0.04680744"},{"1":"10.00","2":"0.1681342","3":"0.05057901"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[7]},"pages":{}}}
   </script>
 </div>
 <!-- rnb-frame-end -->
@@ -2117,28 +2223,103 @@ Parameter tuning of ‘svm’:
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<p>The best model is at a cost of 10.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeShiZXN0bW9kcGx5KVxuXG5gYGAifQ== -->
 <pre class="r"><code>summary(bestmodply)
 </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxuYmVzdC50dW5lKE1FVEhPRCA9IHN2bSwgdHJhaW4ueCA9IFB1cmNoYXNlIH4gLiwgZGF0YSA9IE9KW3RyYWluLCBcbiAgICBdLCByYW5nZXMgPSBsaXN0KGNvc3QgPSBjKDAuMDEsIDAuMDUsIDAuMSwgMC41LCBcbiAgICAxLCA1LCAxMCkpLCBrZXJuZWwgPSBcInJhZGlhbFwiKVxuXG5cblBhcmFtZXRlcnM6XG4gICBTVk0tVHlwZTogIEMtY2xhc3NpZmljYXRpb24gXG4gU1ZNLUtlcm5lbDogIHJhZGlhbCBcbiAgICAgICBjb3N0OiAgMTAgXG5cbk51bWJlciBvZiBTdXBwb3J0IFZlY3RvcnM6ICAyMDVcblxuICggOTkgMTA2IClcblxuXG5OdW1iZXIgb2YgQ2xhc3NlczogIDIgXG5cbkxldmVsczogXG4gQ0ggTU1cbiJ9 -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxuYmVzdC50dW5lKE1FVEhPRCA9IHN2bSwgdHJhaW4ueCA9IFB1cmNoYXNlIH4gLiwgZGF0YSA9IE9KW3RyYWluLCBdLCByYW5nZXMgPSBsaXN0KGNvc3QgPSBjKDAuMDEsIFxuICAgIDAuMDUsIDAuMSwgMC41LCAxLCA1LCAxMCkpLCBrZXJuZWwgPSBcInBvbHlub21pYWxcIilcblxuXG5QYXJhbWV0ZXJzOlxuICAgU1ZNLVR5cGU6ICBDLWNsYXNzaWZpY2F0aW9uIFxuIFNWTS1LZXJuZWw6ICBwb2x5bm9taWFsIFxuICAgICAgIGNvc3Q6ICAxMCBcbiAgICAgZGVncmVlOiAgMyBcbiAgICAgY29lZi4wOiAgMCBcblxuTnVtYmVyIG9mIFN1cHBvcnQgVmVjdG9yczogIDIxNVxuXG4gKCAxMDggMTA3IClcblxuXG5OdW1iZXIgb2YgQ2xhc3NlczogIDIgXG5cbkxldmVsczogXG4gQ0ggTU1cbiJ9 -->
 <pre><code>
 Call:
-best.tune(METHOD = svm, train.x = Purchase ~ ., data = OJ[train, 
-    ], ranges = list(cost = c(0.01, 0.05, 0.1, 0.5, 
-    1, 5, 10)), kernel = &quot;radial&quot;)
+best.tune(METHOD = svm, train.x = Purchase ~ ., data = OJ[train, ], ranges = list(cost = c(0.01, 
+    0.05, 0.1, 0.5, 1, 5, 10)), kernel = &quot;polynomial&quot;)
 
 
 Parameters:
    SVM-Type:  C-classification 
- SVM-Kernel:  radial 
+ SVM-Kernel:  polynomial 
        cost:  10 
+     degree:  3 
+     coef.0:  0 
 
-Number of Support Vectors:  205
+Number of Support Vectors:  215
 
- ( 99 106 )
+ ( 108 107 )
+
+
+Number of Classes:  2 
+
+Levels: 
+ CH MM</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>This SVM has 215 support vectors with 108 and 108 in the classes.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0cmFpbl0pXG5cbmBgYCJ9 -->
+<pre class="r"><code>table(predict=yhat, truth=OJ$Purchase[train])
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIHRydXRoXG5wcmVkaWN0ICBDSCAgTU1cbiAgICAgQ0ggMzEzICA0M1xuICAgICBNTSAgMTcgMTYyXG4ifQ== -->
+<pre><code>       truth
+predict  CH  MM
+     CH 313  43
+     MM  17 162</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>The training error rate is the count of errors made over the total
+count or (43+17)/535 = 0.112</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0ZXN0XSlcblxuYGBgIn0= -->
+<pre class="r"><code>table(predict=yhat, truth=OJ$Purchase[test])
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIHRydXRoXG5wcmVkaWN0ICBDSCAgTU1cbiAgICAgQ0ggMjIxIDEzNVxuICAgICBNTSAxMDIgIDc3XG4ifQ== -->
+<pre><code>       truth
+predict  CH  MM
+     CH 221 135
+     MM 102  77</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>The test error rate is the count of errors made over the total count
+or (135+102)/535 = 0.443</p>
+<ol start="8" style="list-style-type: lower-alpha">
+<li>Repeat parts (b) through (e) using a linear support vector machine,
+applied to an expanded feature set consisting of linear and all possible
+quadratic terms for the predictors. How does this compare to the
+polynomial kernel both conceptually and in terms of the results for this
+problem?</li>
+</ol>
+<p>The results are not as good. This model is simpler in that it is a
+linear model; only the predictors have been transformed.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeShzdm1leHAuZml0KVxuXG5gYGAifQ== -->
+<pre class="r"><code>summary(svmexp.fit)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxuc3ZtKGZvcm11bGEgPSBQdXJjaGFzZSB+IC4gKyBwb2x5KFByaWNlRGlmZiwgMikgKyBwb2x5KExpc3RQcmljZURpZmYsIDIpICsgcG9seShEaXNjTU0sIFxuICAgIDIpICsgcG9seShMb3lhbENILCAyKSArIHBvbHkoU2FsZVByaWNlTU0sIDIpICsgcG9seShTYWxlUHJpY2VDSCwgMikgKyBwb2x5KFBjdERpc2NNTSwgXG4gICAgMikgKyBwb2x5KFBjdERpc2NDSCwgMiksIGRhdGEgPSBPSlt0cmFpbiwgXSwga2VybmVsID0gXCJsaW5lYXJcIilcblxuXG5QYXJhbWV0ZXJzOlxuICAgU1ZNLVR5cGU6ICBDLWNsYXNzaWZpY2F0aW9uIFxuIFNWTS1LZXJuZWw6ICBsaW5lYXIgXG4gICAgICAgY29zdDogIDEgXG5cbk51bWJlciBvZiBTdXBwb3J0IFZlY3RvcnM6ICAyMDBcblxuICggOTcgMTAzIClcblxuXG5OdW1iZXIgb2YgQ2xhc3NlczogIDIgXG5cbkxldmVsczogXG4gQ0ggTU1cbiJ9 -->
+<pre><code>
+Call:
+svm(formula = Purchase ~ . + poly(PriceDiff, 2) + poly(ListPriceDiff, 2) + poly(DiscMM, 
+    2) + poly(LoyalCH, 2) + poly(SalePriceMM, 2) + poly(SalePriceCH, 2) + poly(PctDiscMM, 
+    2) + poly(PctDiscCH, 2), data = OJ[train, ], kernel = &quot;linear&quot;)
+
+
+Parameters:
+   SVM-Type:  C-classification 
+ SVM-Kernel:  linear 
+       cost:  1 
+
+Number of Support Vectors:  200
+
+ ( 97 103 )
 
 
 Number of Classes:  2 
@@ -2154,112 +2335,144 @@ Levels:
 <pre class="r"><code>table(predict=yhat, truth=OJ$Purchase[train])
 </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIHRydXRoXG5wcmVkaWN0ICBDSCAgTU1cbiAgICAgQ0ggMzEwICA4MFxuICAgICBNTSAgMjAgMTI1XG4ifQ== -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIHRydXRoXG5wcmVkaWN0ICBDSCAgTU1cbiAgICAgQ0ggMjk1ICA0M1xuICAgICBNTSAgMzUgMTYyXG4ifQ== -->
 <pre><code>       truth
 predict  CH  MM
-     CH 310  80
-     MM  20 125</code></pre>
+     CH 295  43
+     MM  35 162</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>The training error rate is</p>
+<p>The training error rate is the count of errors made over the total
+count or (49+24)/535 = ****</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0ZXN0XSlcblxuYGBgIn0= -->
 <pre class="r"><code>table(predict=yhat, truth=OJ$Purchase[test])
 </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIHRydXRoXG5wcmVkaWN0ICBDSCAgTU1cbiAgICAgQ0ggMjM4IDE1MlxuICAgICBNTSAgODUgIDYwXG4ifQ== -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIHRydXRoXG5wcmVkaWN0ICBDSCAgTU1cbiAgICAgQ0ggMjA2IDEzMlxuICAgICBNTSAxMTcgIDgwXG4ifQ== -->
 <pre><code>       truth
 predict  CH  MM
-     CH 238 152
-     MM  85  60</code></pre>
+     CH 206 132
+     MM 117  80</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>The test error rate is</p>
-<ol start="8" style="list-style-type: lower-alpha">
-<li>Repeat parts (b) through (e) using a linear support vector machine,
-applied to an expanded feature set consisting of linear and all possible
-quadratic terms for the predictors. How does this compare to the
-polynomial kernel both conceptually and in terms of the results for this
-problem?</li>
-</ol>
+<p>The test error rate is the count of errors made over the total count
+or (49+24)/535 = ****</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3ZtZXhwLmZpdCA8LSBzdm0oUHVyY2hhc2V+cHBwcCxkYXRhPU9KW3RyYWluLF0sa2VybmVsPVwicmFkaWFsXCIpXG5cbmBgYCJ9 -->
-<pre class="r"><code>svmexp.fit &lt;- svm(Purchase~pppp,data=OJ[train,],kernel=&quot;radial&quot;)
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeSh0dW5lZXhwLm91dClcblxuYGBgIn0= -->
+<pre class="r"><code>summary(tuneexp.out)
 </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3IgaW4gbW9kZWwuZnJhbWUuZGVmYXVsdChmb3JtdWxhID0gUHVyY2hhc2UgfiBwcHBwLCBkYXRhID0gT0pbdHJhaW4sICA6IFxuICB2YXJpYWJsZSBsZW5ndGhzIGRpZmZlciAoZm91bmQgZm9yICdwcHBwJylcbiJ9 -->
-<pre><code>Error in model.frame.default(formula = Purchase ~ pppp, data = OJ[train,  : 
-  variable lengths differ (found for &#39;pppp&#39;)</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiXG5QYXJhbWV0ZXIgdHVuaW5nIG9mIOKAmHN2beKAmTpcblxuLSBzYW1wbGluZyBtZXRob2Q6IDEwLWZvbGQgY3Jvc3MgdmFsaWRhdGlvbiBcblxuLSBiZXN0IHBhcmFtZXRlcnM6XG4ifQ== -->
+<pre><code>
+Parameter tuning of ‘svm’:
+
+- sampling method: 10-fold cross validation 
+
+- best parameters:</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MSwibmNvbCI6MSwic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFBNFdSelVyRU1CREhwMmxqM2NJdUM3NkFCNjhOQ1ZMUWcrQkJmQUJSMkd0c3F4YXp5WkttNk5OWGs1cWd6UllzbEV4Kzg1L0pmRHpjN1M2TFhRRUFLV1JwQWltMkp1Q254L3Z5Q2lCRDlwSkFCaXQzZmxyUjJRUUFOdTY4dlFEL3pZUlk4bjNiVzJQN0IyYTE2azBrWEtuQkVHNk10bUxrTWxzbld2c1g4aDh4K2xwT0JLT1BTYncvOS83QytXL09LYUhzaUZReFlUUW1WVVFZb1JHcFlzS29JLzlXTy9NajcwK2JidS9OVTJ1R3lZM3hwTFQ2SUV0alBacDlMWGdmaTRxR0cwNWV0STFmeUoycmcrbVVERHZBVVhDaUk3QWRwS3VrS2V1M1FiNlg3TnE5NEJmaC92V3lQV3NmKzF3bnJYenRaQnVLRi95NUZmNnlzUzFQSFpPRDdxUUpyVmphRTZNTUY3ODdFSUZNemNINERWSCtsRkRWQWdBQSJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["cost"],"name":[1],"type":["dbl"],"align":["right"]}],"data":[{"1":"10","_rn_":""}],"options":{"columns":{"min":{},"max":[10],"total":[1]},"rows":{"min":[10],"max":[10],"total":[1]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG4tIGJlc3QgcGVyZm9ybWFuY2U6IDAuMTc1NzE2MyBcblxuLSBEZXRhaWxlZCBwZXJmb3JtYW5jZSByZXN1bHRzOlxuIn0= -->
+<pre><code>
+- best performance: 0.1757163 
+
+- Detailed performance results:</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NywibmNvbCI6Mywic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFBd3R5aVREbWl1QmlZR0JnWm1CaFptUmdaZ1V5R1ZoRFE5eDBMUmdZV0ppQUhFWUdGZ1pPRUYwQlZDUU1Wc25Bd0FmRTdQWXRWUS9kMTRsVTI2K2NDUUt6N0hkQzZRY01ZR0QvQVVJN2lFQnBGUVlZZ09nL2JoNjU2ZVRkSGZiSGZxMjJOYi81enY3WTNqL0hsMTVUdGorMlgvRVJTMndKUXZ5NzlUc1o1MS8yeDJydk0vMndTWUhyWDNJenVQdlcyOXYycTVaOC9CMmpXV1Mvd25iZWRxZFAxK3hYbGpxcngvVzMySy9jc2NuT3E4N1dmdFdoRFE2OG0rYlpyelQrY2ZtUzRVWTBqN0htSmVhbUZnTVpBcEJnQUF1eUpPY1hsOEFVcEJZVjVSZEJPVndwbWNVRnFVWEZtZmw1YU9ad0Z1V1g2OEhNNGdWaXBnYUlaOW5STFV6T1NTeUdXY2dJTnpleEpGRXZyUWlvSDhqN2g2YUZQYitnQkdnalVCTVRLQXBZMFRRekZxRUpDSlRtZ1Z5U29wdWNVWnFYcld0b0NiSUJMQThCdkZBMk94S2JHV0luMDMrb1dheFFzOWhTODlJejgxSmhqczlKVEVyTmdYTDRnRjRHKzFpdm9DZ3pEeFplWEVEUllyMlMvSkpFbURxdTVQd2NtQWpZY3d6L0FIOXZ2ZHQ2QWdBQSJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["cost"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["error"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["dispersion"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"0.01","2":"0.1813767","3":"0.04072057"},{"1":"0.05","2":"0.1795248","3":"0.05203968"},{"1":"0.10","2":"0.1776730","3":"0.04734512"},{"1":"0.50","2":"0.1777079","3":"0.04972277"},{"1":"1.00","2":"0.1795248","3":"0.05023725"},{"1":"5.00","2":"0.1794200","3":"0.05226661"},{"1":"10.00","2":"0.1757163","3":"0.04922464"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[7]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiTkFcbiJ9 -->
+<pre><code>NA</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueWhhdCA8LSBwcmVkaWN0KHN2bWV4cC5maXQpXG5cbnRhYmxlKHByZWRpY3Q9eWhhdCwgdHJ1dGg9T0okUHVyY2hhc2VbdHJhaW5dKVxuYGBgIn0= -->
-<pre class="r"><code>yhat &lt;- predict(svmexp.fit)
-
-table(predict=yhat, truth=OJ$Purchase[train])</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>The training error rate is</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0ZXN0XSlcbmBgYCJ9 -->
-<pre class="r"><code>table(predict=yhat, truth=OJ$Purchase[test])</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>The test error rate is</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG50dW5lZXhwLm91dCA8LSB0dW5lKHN2bSxQdXJjaGFzZX4uLGRhdGE9T0pbdHJhaW4sXSxrZXJuZWw9XCJyYWRpYWxcIixyYW5nZXM9bGlzdChjb3N0PWMoMC4wMSwwLjA1LDAuMSwwLjUsMSw1LDEwKSkpXG5zdW1tYXJ5KHR1bmVleHAub3V0KVxuYGBgIn0= -->
-<pre class="r"><code>
-tuneexp.out &lt;- tune(svm,Purchase~.,data=OJ[train,],kernel=&quot;radial&quot;,ranges=list(cost=c(0.01,0.05,0.1,0.5,1,5,10)))
-summary(tuneexp.out)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYmVzdG1vZGV4cCA8LSB0dW5lZXhwLm91dCRiZXN0Lm1vZGVsXG5zdW1tYXJ5KGJlc3Rtb2RleHApXG5gYGAifQ== -->
-<pre class="r"><code>bestmodexp &lt;- tuneexp.out$best.model
-summary(bestmodexp)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueWhhdCA8LSBwcmVkaWN0KHN2bWV4cC5maXQpXG5cbnRhYmxlKHByZWRpY3Q9eWhhdCwgdHJ1dGg9T0okUHVyY2hhc2VbdHJhaW5dKVxuXG5cbmBgYCJ9 -->
-<pre class="r"><code>yhat &lt;- predict(svmexp.fit)
-
-table(predict=yhat, truth=OJ$Purchase[train])
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeShiZXN0bW9kZXhwKVxuXG5gYGAifQ== -->
+<pre class="r"><code>summary(bestmodexp)
 </code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxuYmVzdC50dW5lKE1FVEhPRCA9IHN2bSwgdHJhaW4ueCA9IFB1cmNoYXNlIH4gLiArIHBvbHkoUHJpY2VEaWZmLCAyKSArIHBvbHkoTGlzdFByaWNlRGlmZiwgXG4gICAgMikgKyBwb2x5KERpc2NNTSwgMikgKyBwb2x5KExveWFsQ0gsIDIpICsgcG9seShTYWxlUHJpY2VNTSwgMikgKyBwb2x5KFNhbGVQcmljZUNILCBcbiAgICAyKSArIHBvbHkoUGN0RGlzY01NLCAyKSArIHBvbHkoUGN0RGlzY0NILCAyKSwgZGF0YSA9IE9KW3RyYWluLCBdLCByYW5nZXMgPSBsaXN0KGNvc3QgPSBjKDAuMDEsIFxuICAgIDAuMDUsIDAuMSwgMC41LCAxLCA1LCAxMCkpLCBrZXJuZWwgPSBcImxpbmVhclwiKVxuXG5cblBhcmFtZXRlcnM6XG4gICBTVk0tVHlwZTogIEMtY2xhc3NpZmljYXRpb24gXG4gU1ZNLUtlcm5lbDogIGxpbmVhciBcbiAgICAgICBjb3N0OiAgMTAgXG5cbk51bWJlciBvZiBTdXBwb3J0IFZlY3RvcnM6ICAxOTVcblxuICggOTcgOTggKVxuXG5cbk51bWJlciBvZiBDbGFzc2VzOiAgMiBcblxuTGV2ZWxzOiBcbiBDSCBNTVxuIn0= -->
+<pre><code>
+Call:
+best.tune(METHOD = svm, train.x = Purchase ~ . + poly(PriceDiff, 2) + poly(ListPriceDiff, 
+    2) + poly(DiscMM, 2) + poly(LoyalCH, 2) + poly(SalePriceMM, 2) + poly(SalePriceCH, 
+    2) + poly(PctDiscMM, 2) + poly(PctDiscCH, 2), data = OJ[train, ], ranges = list(cost = c(0.01, 
+    0.05, 0.1, 0.5, 1, 5, 10)), kernel = &quot;linear&quot;)
+
+
+Parameters:
+   SVM-Type:  C-classification 
+ SVM-Kernel:  linear 
+       cost:  10 
+
+Number of Support Vectors:  195
+
+ ( 97 98 )
+
+
+Number of Classes:  2 
+
+Levels: 
+ CH MM</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>The training error rate is</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0ZXN0XSlcbmBgYCJ9 -->
-<pre class="r"><code>table(predict=yhat, truth=OJ$Purchase[test])</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0cmFpbl0pXG5cbmBgYCJ9 -->
+<pre class="r"><code>table(predict=yhat, truth=OJ$Purchase[train])
+</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIHRydXRoXG5wcmVkaWN0ICBDSCAgTU1cbiAgICAgQ0ggMjk0ICA0MlxuICAgICBNTSAgMzYgMTYzXG4ifQ== -->
+<pre><code>       truth
+predict  CH  MM
+     CH 294  42
+     MM  36 163</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>The test error rate is</p>
+<p>The training error rate is the count of errors made over the total
+count or (42+36)/535 = 0.146</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0ZXN0XSlcblxuYGBgIn0= -->
+<pre class="r"><code>table(predict=yhat, truth=OJ$Purchase[test])
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIHRydXRoXG5wcmVkaWN0ICBDSCAgTU1cbiAgICAgQ0ggMjA2IDEzMFxuICAgICBNTSAxMTcgIDgyXG4ifQ== -->
+<pre><code>       truth
+predict  CH  MM
+     CH 206 130
+     MM 117  82</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>The test error rate is the count of errors made over the total count
+or (130+117)/535 = 0.462</p>
 <ol style="list-style-type: lower-roman">
-<li>Overall, which approach seems to give the best results on this
-data?</li>
+<li>Overall, which approach seems to give the best results on this data?
+The polynomial model has the best fit for the test data.</li>
 </ol>
 <!-- rnb-text-end -->
 </div>
 </div>
 
-<div id="rmd-source-code">LS0tCm91dHB1dDogaHRtbF9ub3RlYm9vawotLS0KIyMgUHJvYmxlbSAzCgoKYGBge3J9CmxpYnJhcnkoZTEwNzEpCmxpYnJhcnkoSVNMUikKYXR0YWNoKE9KKQpgYGAKCgojIyMgYSkgCmBgYHtyfQpzZXQuc2VlZCgyMDE3KQoKdHJhaW4gPSBzYW1wbGUoMTpucm93KE9KKSwgNTM1KQp0ZXN0ID0gc2V0ZGlmZigxOm5yb3coT0opLCB0cmFpbikKYGBgCgoKIyMjIGIpCmBgYHtyfQpzdm0uZml0IDwtIHN2bShQdXJjaGFzZX4uLGRhdGE9T0pbdHJhaW4sXSxrZXJuZWw9ImxpbmVhciIsY29zdD0xKQpzdW1tYXJ5KHN2bS5maXQpCmBgYApUaGUgU1ZNIG1hY2hpbmUgaGFzIDIwMiBzdXBwb3J0IHZlY3RvcnMgd2l0aCAxMDIgaW4gdGhlIENIIGNsYXNzIGFuZCAxMDAgaW4gdGhlIE1NIGNsYXNzLgoKCihjKSBXaGF0IGFyZSB0aGUgdHJhaW5pbmcgYW5kIHRlc3QgZXJyb3IgcmF0ZXM/CmBgYHtyfQp5aGF0IDwtIHByZWRpY3Qoc3ZtLmZpdCkKCnRhYmxlKHByZWRpY3Q9eWhhdCwgdHJ1dGg9T0okUHVyY2hhc2VbdHJhaW5dKQpgYGAKVGhlIHRyYWluaW5nIGVycm9yIHJhdGUgaXMgdGhlIGNvdW50IG9mIGVycm9ycyBtYWRlIG92ZXIgdGhlIHRvb3RhbCBjb3VudCBvciAoNDArMzcpLygyMDErODArMTMyKzEyMikgPSAwLjE0CgpgYGB7cn0KdGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0ZXN0XSkKYGBgClRoZSB0ZXN0IGVycm9yIHJhdGUgaXMgdGhlIGNvdW50IG9mIGVycm9ycyBtYWRlIG92ZXIgdGhlIGNvdW50IG9mIGNhc2VzIG9yICgxMzIrMTIyKS8oMjAxKzgwKzEzMisxMjIpID0gMC40Ny4KCgojIyMgZCkKYGBge3J9CnR1bmUub3V0IDwtIHR1bmUoc3ZtLFB1cmNoYXNlfi4sZGF0YT1PSlt0cmFpbixdLGtlcm5lbD0ibGluZWFyIixyYW5nZXM9bGlzdChjb3N0PWMoMC4wMSwwLjA1LDAuMSwwLjUsMC43LDAuNzUsMC44NSwwLjk1LDEsNSw3LjUsOCwxMCkpKQpzdW1tYXJ5KHR1bmUub3V0KQpgYGAKQW4gb3B0aW1hbCBjb3N0IGlzIDEwLgoKCiMjIyBlKQpgYGB7cn0KYmVzdG1vZCA8LSB0dW5lLm91dCRiZXN0Lm1vZGVsCnN1bW1hcnkoYmVzdG1vZCkKYGBgCgpgYGB7cn0KeWhhdCA8LSBwcmVkaWN0KGJlc3Rtb2QpCgp0YWJsZShwcmVkaWN0PXloYXQsIHRydXRoPU9KJFB1cmNoYXNlW3RyYWluXSkKYGBgClRoZSB0cmFpbmluZyBlcnJvciByYXRlIGlzIHRoZSBjb3VudCBvZiBlcnJvcnMgbWFkZSBvdmVyIHRoZSB0b290YWwgY291bnQgb3IgKDQ0KzMxKS8oMjAxKzgwKzEzMisxMjIpID0gMC4xNAoKYGBge3J9CnRhYmxlKHByZWRpY3Q9eWhhdCwgdHJ1dGg9T0okUHVyY2hhc2VbdGVzdF0pCmBgYApUaGUgdGVzdCBlcnJvciByYXRlIGlzIHRoZSBjb3VudCBvZiBlcnJvcnMgbWFkZSBvdmVyIHRoZSB0b290YWwgY291bnQgb3IgKDEzMisxMTIpLygyMDErODArMTMyKzEyMikgPSAwLjQ2CgoKKGYpIFJlcGVhdCBwYXJ0cyAoYikgdGhyb3VnaCAoZSkgdXNpbmcgYSBzdXBwb3J0IHZlY3RvciBtYWNoaW5lIHdpdGggYSByYWRpYWwga2VybmVsLiBVc2UgdGhlIGRlZmF1bHQgdmFsdWUgZm9yIGdhbW1hLgpgYGB7cn0KCnN2bXJhZC5maXQgPC0gc3ZtKFB1cmNoYXNlfi4sZGF0YT1PSlt0cmFpbixdLGtlcm5lbD0icmFkaWFsIikKc3VtbWFyeShzdm1yYWQuZml0KQoKCgpgYGAKCmBgYHtyfQp5aGF0IDwtIHByZWRpY3Qoc3ZtcmFkLmZpdCkKCnRhYmxlKHByZWRpY3Q9eWhhdCwgdHJ1dGg9T0okUHVyY2hhc2VbdHJhaW5dKQpgYGAKVGhlIHRyYWluaW5nIGVycm9yIHJhdGUgaXMgCgpgYGB7cn0KdGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0ZXN0XSkKYGBgClRoZSB0ZXN0IGVycm9yIHJhdGUgaXMgCgpgYGB7cn0KCnR1bmVyYWQub3V0IDwtIHR1bmUoc3ZtLFB1cmNoYXNlfi4sZGF0YT1PSlt0cmFpbixdLGtlcm5lbD0icmFkaWFsIixyYW5nZXM9bGlzdChjb3N0PWMoMC4wMSwwLjA1LDAuMSwwLjUsMSw1LDEwKSkpCnN1bW1hcnkodHVuZXJhZC5vdXQpCmBgYAoKYGBge3J9CmJlc3Rtb2RyYWQgPC0gdHVuZXJhZC5vdXQkYmVzdC5tb2RlbApzdW1tYXJ5KGJlc3Rtb2RyYWQpCmBgYAoKYGBge3J9CnloYXQgPC0gcHJlZGljdChzdm1yYWQuZml0KQoKdGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0cmFpbl0pCgoKYGBgClRoZSB0cmFpbmluZyBlcnJvciByYXRlIGlzIAoKCmBgYHtyfQp0YWJsZShwcmVkaWN0PXloYXQsIHRydXRoPU9KJFB1cmNoYXNlW3Rlc3RdKQpgYGAKVGhlIHRlc3QgZXJyb3IgcmF0ZSBpcyAKCgoKCgoKIyMjIGcpCmBgYHtyfQpzdm1wbHkuZml0IDwtIHN2bShQdXJjaGFzZX4uLGRhdGE9T0pbdHJhaW4sXSxrZXJuZWw9InBvbHlub21pYWwiLGRlZ3JlZT0yKQpzdW1tYXJ5KHN2bXBseS5maXQpCmBgYApOb3cgMzE1IHN1cHBvcnQgdmVjdG9ycyAqKioqKgoKCmBgYHtyfQp5aGF0IDwtIHByZWRpY3Qoc3ZtcGx5LmZpdCkKCnRhYmxlKHByZWRpY3Q9eWhhdCwgdHJ1dGg9T0okUHVyY2hhc2VbdHJhaW5dKQpgYGAKVGhlIHRyYWluaW5nIGVycm9yIHJhdGUgaXMgCgpgYGB7cn0KdGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0ZXN0XSkKYGBgClRoZSB0ZXN0IGVycm9yIHJhdGUgaXMgCgoKYGBge3J9CnR1bmVwbHkub3V0IDwtIHR1bmUoc3ZtLFB1cmNoYXNlfi4sZGF0YT1PSlt0cmFpbixdLGtlcm5lbD0icmFkaWFsIixyYW5nZXM9bGlzdChjb3N0PWMoMC4wMSwwLjA1LDAuMSwwLjUsMSw1LDEwKSkpCnN1bW1hcnkodHVuZXBseS5vdXQpCmBgYAoKYGBge3J9CmJlc3Rtb2RwbHkgPC0gdHVuZXBseS5vdXQkYmVzdC5tb2RlbApzdW1tYXJ5KGJlc3Rtb2RwbHkpCmBgYAoKYGBge3J9CnloYXQgPC0gcHJlZGljdChzdm1wbHkuZml0KQoKdGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0cmFpbl0pCmBgYApUaGUgdHJhaW5pbmcgZXJyb3IgcmF0ZSBpcyAKCgpgYGB7cn0KdGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0ZXN0XSkKYGBgClRoZSB0ZXN0IGVycm9yIHJhdGUgaXMgCgoKCgoKKGgpIFJlcGVhdCBwYXJ0cyAoYikgdGhyb3VnaCAoZSkgdXNpbmcgYSBsaW5lYXIgc3VwcG9ydCB2ZWN0b3IgbWFjaGluZSwgYXBwbGllZCB0byBhbiBleHBhbmRlZCBmZWF0dXJlIHNldCBjb25zaXN0aW5nIG9mIGxpbmVhciBhbmQgYWxsIHBvc3NpYmxlIHF1YWRyYXRpYyB0ZXJtcyBmb3IgdGhlIHByZWRpY3RvcnMuIEhvdyBkb2VzIHRoaXMgY29tcGFyZSB0byB0aGUgcG9seW5vbWlhbCBrZXJuZWwgYm90aCBjb25jZXB0dWFsbHkgYW5kIGluIHRlcm1zIG9mIHRoZSByZXN1bHRzIGZvciB0aGlzIHByb2JsZW0/CmBgYHtyfQoKZGYgPSBzdWJzZXQobXlkYXRhLCBzZWxlY3QgPSAtYyh4LHopICkKCgoKcHAgPC0gT0pbLHVubGlzdChsYXBwbHkoT0osIGlzLm51bWVyaWMpKV0KcHAgPC0gc3Vic2V0KHBwLCBzZWxlY3QgPSAtYyhTdG9yZUlELFNwZWNpYWxDSCxTcGVjaWFsTU0sU1RPUkUpKQpwcCA8LSBuYS5vbWl0KChwcCkpCgpzdW1tYXJ5KHBwKQoKc3RyKHBwKQoKcHBwIDwtIGFzLm1hdHJpeCgocHApKQoKcHBwcCA8LSBwb2x5KHBwcCxkZWdyZWU9MixyYXc9VFJVRSkKCj9wb2x5CgpwcAoKc3VtbWFyeShPSikKCj9zdm0KCnN2bWV4cC5maXQgPC0gc3ZtKFB1cmNoYXNlfnBwcHAsZGF0YT1PSlt0cmFpbixdLGtlcm5lbD0icmFkaWFsIikKc3VtbWFyeShzdm1leHAuZml0KQoKCgpgYGAKCmBgYHtyfQp5aGF0IDwtIHByZWRpY3Qoc3ZtZXhwLmZpdCkKCnRhYmxlKHByZWRpY3Q9eWhhdCwgdHJ1dGg9T0okUHVyY2hhc2VbdHJhaW5dKQpgYGAKVGhlIHRyYWluaW5nIGVycm9yIHJhdGUgaXMgCgpgYGB7cn0KdGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0ZXN0XSkKYGBgClRoZSB0ZXN0IGVycm9yIHJhdGUgaXMgCgpgYGB7cn0KCnR1bmVleHAub3V0IDwtIHR1bmUoc3ZtLFB1cmNoYXNlfi4sZGF0YT1PSlt0cmFpbixdLGtlcm5lbD0icmFkaWFsIixyYW5nZXM9bGlzdChjb3N0PWMoMC4wMSwwLjA1LDAuMSwwLjUsMSw1LDEwKSkpCnN1bW1hcnkodHVuZWV4cC5vdXQpCmBgYAoKYGBge3J9CmJlc3Rtb2RleHAgPC0gdHVuZWV4cC5vdXQkYmVzdC5tb2RlbApzdW1tYXJ5KGJlc3Rtb2RleHApCmBgYAoKYGBge3J9CnloYXQgPC0gcHJlZGljdChzdm1leHAuZml0KQoKdGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0cmFpbl0pCgoKYGBgClRoZSB0cmFpbmluZyBlcnJvciByYXRlIGlzIAoKCmBgYHtyfQp0YWJsZShwcmVkaWN0PXloYXQsIHRydXRoPU9KJFB1cmNoYXNlW3Rlc3RdKQpgYGAKVGhlIHRlc3QgZXJyb3IgcmF0ZSBpcyAKCgoKCihpKSBPdmVyYWxsLCB3aGljaCBhcHByb2FjaCBzZWVtcyB0byBnaXZlIHRoZSBiZXN0IHJlc3VsdHMgb24gdGhpcyBkYXRhPwoK</div>
+<div id="rmd-source-code">LS0tCm91dHB1dDoKICBwZGZfZG9jdW1lbnQ6IGRlZmF1bHQKICBodG1sX25vdGVib29rOiBkZWZhdWx0Ci0tLQojIyBQcm9ibGVtIDMKCgpgYGB7cn0KbGlicmFyeShlMTA3MSkKbGlicmFyeShJU0xSKQphdHRhY2goT0opCmBgYAoKCiMjIyBhKSAKYGBge3J9CnNldC5zZWVkKDIwMTcpCgp0cmFpbiA9IHNhbXBsZSgxOm5yb3coT0opLCA1MzUpCnRlc3QgPSBzZXRkaWZmKDE6bnJvdyhPSiksIHRyYWluKQpgYGAKCgojIyMgYikKYGBge3J9CnN2bS5maXQgPC0gc3ZtKFB1cmNoYXNlfi4sZGF0YT1PSlt0cmFpbixdLGtlcm5lbD0ibGluZWFyIixjb3N0PTEpCnN1bW1hcnkoc3ZtLmZpdCkKYGBgClRoZSBTVk0gbWFjaGluZSBoYXMgMjAyIHN1cHBvcnQgdmVjdG9ycyB3aXRoIDEwMiBhbmQgMTAwIGluIHRoZSBjbGFzc2VzLgoKCiMjIyBjKSBXaGF0IGFyZSB0aGUgdHJhaW5pbmcgYW5kIHRlc3QgZXJyb3IgcmF0ZXM/CmBgYHtyfQp5aGF0IDwtIHByZWRpY3Qoc3ZtLmZpdCkKCnRhYmxlKHByZWRpY3Q9eWhhdCwgdHJ1dGg9T0okUHVyY2hhc2VbdHJhaW5dKQpgYGAKVGhlIHRyYWluaW5nIGVycm9yIHJhdGUgaXMgdGhlIGNvdW50IG9mIGVycm9ycyBtYWRlIG92ZXIgdGhlIHRvb3RhbCBjb3VudCBvciAoNDArMzcpLygyMDErODArMTMyKzEyMikgPSAwLjE0CgpgYGB7cn0KdGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0ZXN0XSkKYGBgClRoZSB0ZXN0IGVycm9yIHJhdGUgaXMgdGhlIGNvdW50IG9mIGVycm9ycyBtYWRlIG92ZXIgdGhlIGNvdW50IG9mIGNhc2VzIG9yICgxMzIrMTIyKS8oMjAxKzgwKzEzMisxMjIpID0gMC40Ny4KCgojIyMgZCkKYGBge3J9CnR1bmUub3V0IDwtIHR1bmUoc3ZtLFB1cmNoYXNlfi4sZGF0YT1PSlt0cmFpbixdLGtlcm5lbD0ibGluZWFyIixyYW5nZXM9bGlzdChjb3N0PWMoMC4wMSwwLjA1LDAuMSwwLjUsMC43LDAuNzUsMC44NSwwLjk1LDEsNSw3LjUsOCwxMCkpKQpzdW1tYXJ5KHR1bmUub3V0KQpgYGAKQW4gb3B0aW1hbCBjb3N0IGlzIDAuNzUuCgoKIyMjIGUpCmBgYHtyfQpiZXN0bW9kIDwtIHR1bmUub3V0JGJlc3QubW9kZWwKc3VtbWFyeShiZXN0bW9kKQpgYGAKCmBgYHtyfQp5aGF0IDwtIHByZWRpY3QoYmVzdG1vZCkKCnRhYmxlKHByZWRpY3Q9eWhhdCwgdHJ1dGg9T0okUHVyY2hhc2VbdHJhaW5dKQpgYGAKVGhlIHRyYWluaW5nIGVycm9yIHJhdGUgaXMgdGhlIGNvdW50IG9mIGVycm9ycyBtYWRlIG92ZXIgdGhlIHRvdGFsIGNvdW50IG9yICg0MCszNikvNTM1ID0gMC4xNAoKYGBge3J9CnRhYmxlKHByZWRpY3Q9eWhhdCwgdHJ1dGg9T0okUHVyY2hhc2VbdGVzdF0pCmBgYApUaGUgdGVzdCBlcnJvciByYXRlIGlzIHRoZSBjb3VudCBvZiBlcnJvcnMgbWFkZSBvdmVyIHRoZSB0b290YWwgY291bnQgb3IgKDEzMysxMjIpLzUzNSA9IDAuNDgKCgooZikgUmVwZWF0IHBhcnRzIChiKSB0aHJvdWdoIChlKSB1c2luZyBhIHN1cHBvcnQgdmVjdG9yIG1hY2hpbmUgd2l0aCBhIHJhZGlhbCBrZXJuZWwuIFVzZSB0aGUgZGVmYXVsdCB2YWx1ZSBmb3IgZ2FtbWEuCmBgYHtyfQpzdm1yYWQuZml0IDwtIHN2bShQdXJjaGFzZX4uLGRhdGE9T0pbdHJhaW4sXSxrZXJuZWw9InJhZGlhbCIpCnN1bW1hcnkoc3ZtcmFkLmZpdCkKYGBgClRoZSBTVk0gbWFjaGluZSBoYXMgMjYwIHN1cHBvcnQgdmVjdG9ycyB3aXRoIDEyNyBhbmQgMTMzIGluIHRoZSBjbGFzc2VzLgoKCmBgYHtyfQp5aGF0IDwtIHByZWRpY3Qoc3ZtcmFkLmZpdCkKCnRhYmxlKHByZWRpY3Q9eWhhdCwgdHJ1dGg9T0okUHVyY2hhc2VbdHJhaW5dKQpgYGAKVGhlIHRyYWluaW5nIGVycm9yIHJhdGUgaXMgdGhlIGNvdW50IG9mIGVycm9ycyBtYWRlIG92ZXIgdGhlIHRvdGFsIGNvdW50IG9yICg0OSsyNCkvNTM1ID0gMC4xMzYKCmBgYHtyfQp0YWJsZShwcmVkaWN0PXloYXQsIHRydXRoPU9KJFB1cmNoYXNlW3Rlc3RdKQpgYGAKVGhlIHRlc3QgZXJyb3IgcmF0ZSBpcyB0aGUgY291bnQgb2YgZXJyb3JzIG1hZGUgb3ZlciB0aGUgdG90YWwgY291bnQgb3IgKDEzNSsxMDMpLzUzNSA9IDAuNDQ1CgpgYGB7cn0KCnR1bmVyYWQub3V0IDwtIHR1bmUoc3ZtLFB1cmNoYXNlfi4sZGF0YT1PSlt0cmFpbixdLGtlcm5lbD0icmFkaWFsIixyYW5nZXM9bGlzdChjb3N0PWMoMC4wMSwwLjA1LDAuMSwwLjUsMSw1LDEwKSkpCnN1bW1hcnkodHVuZXJhZC5vdXQpCmBgYApCZXN0IG1vZGVsIGlzIGF0IGEgY29zdCBvZiA1LgoKCmBgYHtyfQpiZXN0bW9kcmFkIDwtIHR1bmVyYWQub3V0JGJlc3QubW9kZWwKc3VtbWFyeShiZXN0bW9kcmFkKQpgYGAKVGhpcyBTVk0gaGFzIDIxOCBzdXBwb3J0IHZlY3RvcnMgd2lodCAxMDUgYW5kIDExMyBpbiBlYWNoIGNsYXNzLgoKCmBgYHtyfQp5aGF0IDwtIHByZWRpY3QoYmVzdG1vZHJhZCkKCnRhYmxlKHByZWRpY3Q9eWhhdCwgdHJ1dGg9T0okUHVyY2hhc2VbdHJhaW5dKQpgYGAKVGhlIHRyYWluaW5nIGVycm9yIHJhdGUgaXMgdGhlIGNvdW50IG9mIGVycm9ycyBtYWRlIG92ZXIgdGhlIHRvdGFsIGNvdW50IG9yICg0MisyNCkvNTM1ID0gMC4xMjMKCgpgYGB7cn0KdGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0ZXN0XSkKYGBgClRoZSB0ZXN0IGVycm9yIHJhdGUgaXMgdGhlIGNvdW50IG9mIGVycm9ycyBtYWRlIG92ZXIgdGhlIHRvdGFsIGNvdW50IG9yICgxMzIrMTA3KS81MzUgPSAwLjQ0NwoKCiMjIyBnKQpgYGB7cn0Kc3ZtcGx5LmZpdCA8LSBzdm0oUHVyY2hhc2V+LixkYXRhPU9KW3RyYWluLF0sa2VybmVsPSJwb2x5bm9taWFsIixkZWdyZWU9MikKc3VtbWFyeShzdm1wbHkuZml0KQpgYGAKVGhlIFNWTSBub3cgaGFzIDMxNSBzdXBwb3J0IHZlY3RvcnMgd2l0aCAxNTMgYW5kIDE2MiBpbiB0aGUgY2xhc3Nlcy4KCgpgYGB7cn0KeWhhdCA8LSBwcmVkaWN0KHN2bXBseS5maXQpCgp0YWJsZShwcmVkaWN0PXloYXQsIHRydXRoPU9KJFB1cmNoYXNlW3RyYWluXSkKYGBgClRoZSB0cmFpbmluZyBlcnJvciByYXRlIGlzIHRoZSBjb3VudCBvZiBlcnJvcnMgbWFkZSBvdmVyIHRoZSB0b3RhbCBjb3VudCBvciAoODArMjApLzUzNSA9IDAuMTg3CgpgYGB7cn0KdGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0ZXN0XSkKYGBgClRoZSB0ZXN0IGVycm9yIHJhdGUgaXMgdGhlIGNvdW50IG9mIGVycm9ycyBtYWRlIG92ZXIgdGhlIHRvdGFsIGNvdW50IG9yICgxNTIrODUpLzUzNSA9IDAuNDQzCgoKYGBge3J9CnR1bmVwbHkub3V0IDwtIHR1bmUoc3ZtLFB1cmNoYXNlfi4sZGF0YT1PSlt0cmFpbixdLGtlcm5lbD0icG9seW5vbWlhbCIscmFuZ2VzPWxpc3QoY29zdD1jKDAuMDEsMC4wNSwwLjEsMC41LDEsNSwxMCkpKQpzdW1tYXJ5KHR1bmVwbHkub3V0KQpgYGAKVGhlIGJlc3QgbW9kZWwgaXMgYXQgYSBjb3N0IG9mIDEwLgoKCmBgYHtyfQpiZXN0bW9kcGx5IDwtIHR1bmVwbHkub3V0JGJlc3QubW9kZWwKc3VtbWFyeShiZXN0bW9kcGx5KQpgYGAKVGhpcyBTVk0gaGFzIDIxNSBzdXBwb3J0IHZlY3RvcnMgd2l0aCAxMDggYW5kIDEwOCBpbiB0aGUgY2xhc3Nlcy4KCgpgYGB7cn0KeWhhdCA8LSBwcmVkaWN0KGJlc3Rtb2RwbHkpCgp0YWJsZShwcmVkaWN0PXloYXQsIHRydXRoPU9KJFB1cmNoYXNlW3RyYWluXSkKYGBgClRoZSB0cmFpbmluZyBlcnJvciByYXRlIGlzIHRoZSBjb3VudCBvZiBlcnJvcnMgbWFkZSBvdmVyIHRoZSB0b3RhbCBjb3VudCBvciAoNDMrMTcpLzUzNSA9IDAuMTEyCgoKYGBge3J9CnRhYmxlKHByZWRpY3Q9eWhhdCwgdHJ1dGg9T0okUHVyY2hhc2VbdGVzdF0pCmBgYApUaGUgdGVzdCBlcnJvciByYXRlIGlzIHRoZSBjb3VudCBvZiBlcnJvcnMgbWFkZSBvdmVyIHRoZSB0b3RhbCBjb3VudCBvciAoMTM1KzEwMikvNTM1ID0gMC40NDMKCgoKCgooaCkgUmVwZWF0IHBhcnRzIChiKSB0aHJvdWdoIChlKSB1c2luZyBhIGxpbmVhciBzdXBwb3J0IHZlY3RvciBtYWNoaW5lLCBhcHBsaWVkIHRvIGFuIGV4cGFuZGVkIGZlYXR1cmUgc2V0IGNvbnNpc3Rpbmcgb2YgbGluZWFyIGFuZCBhbGwgcG9zc2libGUgcXVhZHJhdGljIHRlcm1zIGZvciB0aGUgcHJlZGljdG9ycy4gSG93IGRvZXMgdGhpcyBjb21wYXJlIHRvIHRoZSBwb2x5bm9taWFsIGtlcm5lbCBib3RoIGNvbmNlcHR1YWxseSBhbmQgaW4gdGVybXMgb2YgdGhlIHJlc3VsdHMgZm9yIHRoaXMgcHJvYmxlbT8KClRoZSByZXN1bHRzIGFyZSBub3QgYXMgZ29vZC4gVGhpcyBtb2RlbCBpcyBzaW1wbGVyIGluIHRoYXQgaXQgaXMgYSBsaW5lYXIgbW9kZWw7IG9ubHkgdGhlIHByZWRpY3RvcnMgaGF2ZSBiZWVuIHRyYW5zZm9ybWVkLgoKYGBge3J9CnN2bWV4cC5maXQgPC0gc3ZtKFB1cmNoYXNlfi4rcG9seShQcmljZURpZmYsMikrcG9seShMaXN0UHJpY2VEaWZmLDIpK3BvbHkoRGlzY01NLDIpK3BvbHkoTG95YWxDSCwyKStwb2x5KFNhbGVQcmljZU1NLDIpK3BvbHkoU2FsZVByaWNlQ0gsMikrcG9seShQY3REaXNjTU0sMikrcG9seShQY3REaXNjQ0gsMiksZGF0YT1PSlt0cmFpbixdLGtlcm5lbD0ibGluZWFyIikKc3VtbWFyeShzdm1leHAuZml0KQpgYGAKCmBgYHtyfQp5aGF0IDwtIHByZWRpY3Qoc3ZtZXhwLmZpdCkKCnRhYmxlKHByZWRpY3Q9eWhhdCwgdHJ1dGg9T0okUHVyY2hhc2VbdHJhaW5dKQpgYGAKVGhlIHRyYWluaW5nIGVycm9yIHJhdGUgaXMgdGhlIGNvdW50IG9mIGVycm9ycyBtYWRlIG92ZXIgdGhlIHRvdGFsIGNvdW50IG9yICg0OSsyNCkvNTM1ID0gKioqKgoKYGBge3J9CnRhYmxlKHByZWRpY3Q9eWhhdCwgdHJ1dGg9T0okUHVyY2hhc2VbdGVzdF0pCmBgYApUaGUgdGVzdCBlcnJvciByYXRlIGlzIHRoZSBjb3VudCBvZiBlcnJvcnMgbWFkZSBvdmVyIHRoZSB0b3RhbCBjb3VudCBvciAoNDkrMjQpLzUzNSA9ICoqKioKCmBgYHtyfQoKdHVuZWV4cC5vdXQgPC0gdHVuZShzdm0sUHVyY2hhc2V+Litwb2x5KFByaWNlRGlmZiwyKStwb2x5KExpc3RQcmljZURpZmYsMikrcG9seShEaXNjTU0sMikrcG9seShMb3lhbENILDIpK3BvbHkoU2FsZVByaWNlTU0sMikrcG9seShTYWxlUHJpY2VDSCwyKStwb2x5KFBjdERpc2NNTSwyKStwb2x5KFBjdERpc2NDSCwyKSxkYXRhPU9KW3RyYWluLF0sa2VybmVsPSJsaW5lYXIiLHJhbmdlcz1saXN0KGNvc3Q9YygwLjAxLDAuMDUsMC4xLDAuNSwxLDUsMTApKSkKc3VtbWFyeSh0dW5lZXhwLm91dCkKYGBgCgpgYGB7cn0KYmVzdG1vZGV4cCA8LSB0dW5lZXhwLm91dCRiZXN0Lm1vZGVsCnN1bW1hcnkoYmVzdG1vZGV4cCkKYGBgCgpgYGB7cn0KeWhhdCA8LSBwcmVkaWN0KGJlc3Rtb2RleHApCgp0YWJsZShwcmVkaWN0PXloYXQsIHRydXRoPU9KJFB1cmNoYXNlW3RyYWluXSkKCgpgYGAKVGhlIHRyYWluaW5nIGVycm9yIHJhdGUgaXMgdGhlIGNvdW50IG9mIGVycm9ycyBtYWRlIG92ZXIgdGhlIHRvdGFsIGNvdW50IG9yICg0MiszNikvNTM1ID0gMC4xNDYKCgpgYGB7cn0KdGFibGUocHJlZGljdD15aGF0LCB0cnV0aD1PSiRQdXJjaGFzZVt0ZXN0XSkKYGBgClRoZSB0ZXN0IGVycm9yIHJhdGUgaXMgdGhlIGNvdW50IG9mIGVycm9ycyBtYWRlIG92ZXIgdGhlIHRvdGFsIGNvdW50IG9yICgxMzArMTE3KS81MzUgPSAwLjQ2MgoKCgoKKGkpIE92ZXJhbGwsIHdoaWNoIGFwcHJvYWNoIHNlZW1zIHRvIGdpdmUgdGhlIGJlc3QgcmVzdWx0cyBvbiB0aGlzIGRhdGE/ClRoZSBwb2x5bm9taWFsIG1vZGVsIGhhcyB0aGUgYmVzdCBmaXQgZm9yIHRoZSB0ZXN0IGRhdGEuCg==</div>
 
 
 
